@@ -62,7 +62,7 @@ PowerShell).
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &amp;#x8FDB;&amp;#x5165;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55; &lt;code&gt;D:\DataScienceToolbox&lt;/code&gt;.
@@ -80,7 +80,7 @@ PowerShell).
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant init data-science-toolbox/dst&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vagrant box add data-science-toolbox/dst .\dst.box&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant init data-science-toolbox/dst&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vagrant box add data-science-toolbox/dst .\dst.box&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &lt;code&gt;vagrant box add &amp;lt;&amp;#x73AF;&amp;#x5883;&amp;#x540D;&amp;gt; &amp;lt;&amp;#x6587;&amp;#x4EF6;&amp;#x540D;&amp;gt;&lt;/code&gt; &amp;#x547D;&amp;#x4EE4;&amp;#x5C06; &lt;code&gt;dst.box&lt;/code&gt; &amp;#x5BFC;&amp;#x5165;&amp;#x4E86;
@@ -116,14 +116,14 @@ PowerShell).
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;config.vm.network &lt;span class=&quot;string&quot;&gt;&amp;quot;forwarded_port&amp;quot;&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;guest:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;host:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;config.vm.network &lt;span class=&quot;string&quot;&gt;&amp;quot;forwarded_port&amp;quot;&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;guest:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;host:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &lt;code&gt;vagrant ssh&lt;/code&gt; &amp;#x8FDB;&amp;#x5165;&amp;#x7CFB;&amp;#x7EDF;&amp;#x540E;&amp;#xFF0C;&amp;#x6267;&amp;#x884C;
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &amp;#x5728;&amp;#x5BBF;&amp;#x4E3B;&amp;#x673A;&amp;#x5668;&amp;#x7684;&amp;#x6D4F;&amp;#x89C8;&amp;#x5668;&amp;#x4E2D;&amp;#x8F93;&amp;#x5165; &lt;code&gt;http://localhost&amp;#xFF1A;8888&lt;/code&gt; &amp;#x8FDB;&amp;#x5165;Ipython&amp;#x3002;
@@ -139,7 +139,7 @@ PowerShell).
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant package&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant package&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &amp;#x4F1A;&amp;#x81EA;&amp;#x52A8;&amp;#x6253;&amp;#x5305;&amp;#x5F53;&amp;#x524D;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x751F;&amp;#x6210; &lt;code&gt;package.box&lt;/code&gt;, &amp;#x5728;&amp;#x53E6;&amp;#x4E00;&amp;#x53F0;&amp;#x673A;&amp;#x5668;&amp;#x4E0A;&amp;#x91CD;&amp;#x590D;&amp;#x4EE5;&amp;#x4E0A;&amp;#x6B65;&amp;#x9AA4;&amp;#xFF0C; &amp;#x5728;&amp;#x6DFB;&amp;#x52A0;&amp;#x865A;
@@ -204,7 +204,7 @@ ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.d
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node [label=$f(x)=x^{2}$(3)]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node [label=$f(x)=x^{2}$(3)]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &amp;#x6CE8;&amp;#x610F;&amp;#x5728;&amp;#x516C;&amp;#x5F0F;&amp;#x540E;&amp;#x7528;&amp;#x62EC;&amp;#x53F7;&amp;#x6CE8;&amp;#x660E;&amp;#x516C;&amp;#x5F0F;&amp;#x957F;&amp;#x5EA6;,&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x6309;&amp;#x7167;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x5B57;&amp;#x9762;&amp;#x957F;&amp;#x5EA6;&amp;#x53BB;&amp;#x751F;&amp;#x6210;, &amp;#x4E00;&amp;#x822C;&amp;#x6BD4;&amp;#x5B9E;&amp;#x9645;&amp;#x7684;&amp;#x516C;&amp;#x5F0F;
@@ -217,7 +217,7 @@ ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.d
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ladot graph.ladot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ladot graph.ladot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
@@ -226,7 +226,7 @@ ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.d
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;\documentclass[english]{article}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[T1]{fontenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[latin1]{inputenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{geometry}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\geometry{verbose,papersize={&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm},lmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in,rmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{graphicx}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatletter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{psfrag}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{babel}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsmath}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsfonts}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amssymb}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatother&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\thispagestyle{empty} %Avoiding page number&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{document}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\input{graph.tex}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\includegraphics{graph.ps}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{document}&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;\documentclass[english]{article}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[T1]{fontenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[latin1]{inputenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{geometry}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\geometry{verbose,papersize={&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm},lmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in,rmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{graphicx}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatletter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{psfrag}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{babel}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsmath}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsfonts}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amssymb}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatother&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\thispagestyle{empty} %Avoiding page number&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{document}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\input{graph.tex}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\includegraphics{graph.ps}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{document}&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
@@ -235,14 +235,14 @@ ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.d
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;latex dot2dvi.tex&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;latex dot2dvi.tex&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;p&gt;
 &amp;#x518D;&amp;#x751F;&amp;#x6210; &lt;code&gt;ps&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dvips dot2dvi.dvi -o dot2dvi.ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dvips dot2dvi.dvi -o dot2dvi.ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -256,7 +256,7 @@ ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.d
 &lt;/p&gt;
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ps2eps -B dot2dvi.ps graph.eps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ps2eps -B dot2dvi.ps graph.eps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 
 &lt;p&gt;
@@ -394,7 +394,7 @@ e^{i \pi}+1=0
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib, numpy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;matplotlib.use(&lt;span class=&quot;string&quot;&gt;&amp;apos;Agg&amp;apos;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; plt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;&amp;apos;try_hexo/python-matplot-fig.png&amp;apos;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig=plt.figure(figsize=(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x=numpy.linspace(-&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.plot(numpy.sin(x)/x)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig.tight_layout()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.savefig(filename)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; filename &lt;span class=&quot;comment&quot;&gt;# return filename to org-mode&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib, numpy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;matplotlib.use(&lt;span class=&quot;string&quot;&gt;&amp;apos;Agg&amp;apos;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; plt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;&amp;apos;try_hexo/python-matplot-fig.png&amp;apos;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig=plt.figure(figsize=(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x=numpy.linspace(-&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.plot(numpy.sin(x)/x)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig.tight_layout()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.savefig(filename)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; filename &lt;span class=&quot;comment&quot;&gt;# return filename to org-mode&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;figure&quot;&gt;
@@ -413,7 +413,7 @@ e^{i \pi}+1=0
 
 &lt;div class=&quot;org-src-container&quot;&gt;
 
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;print(&lt;span class=&quot;string&quot;&gt;&amp;quot;Hello, Blog&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;print(&lt;span class=&quot;string&quot;&gt;&amp;quot;Hello, Blog&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/div&gt;
 
 &lt;pre class=&quot;example&quot;&gt;

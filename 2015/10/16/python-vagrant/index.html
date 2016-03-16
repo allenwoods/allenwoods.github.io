@@ -94,10 +94,6 @@
         </a>
         <div class="flex-col header-title ellipsis">使用Vagrant打造跨平台Python环境</div>
         
-        <a href="javascript:;" class="header-icon waves-circle-light" id="menu-share">
-            <i class="icon icon-lg icon-share-alt"></i>
-        </a>
-        
     </div>
 </header>
 <header class="content-header">
@@ -119,46 +115,6 @@
       <div class="post-body">
 
         <aside class="post-widget" id="post-widget">
-
-          
-          <div class="post-share" id="post-share" data-title="使用Vagrant打造跨平台Python环境" data-pic="/img/avatar.png" data-summary="&lt;p&gt;
-&amp;#x5047;&amp;#x671F;&amp;#x56DE;&amp;#x5BB6;&amp;#x53EA;&amp;#x80FD;&amp;#x5E26;&amp;#x7740;Windows&amp;#x7684;&amp;#x7B14;&amp;#x8BB0;&amp;#x672C;&amp;#xFF0C;&amp;#x4F46;Python&amp;#x5728;Windows&amp;#x4E0B;&amp;#x8BF8;&amp;#x591A;&amp;#x4E0D;&amp;#x4FBF;&amp;#x3002;Vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x865A;
-&amp;#x62DF;&amp;#x673A;,&amp;#x5B9E;&amp;#x73B0;&amp;#x5728;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4E0B;&amp;#x5171;&amp;#x4EAB;&amp;#x5F00;&amp;#x53D1;&amp;#x73AF;&amp;#x5883;,&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E0B;&amp;#x6574;&amp;#x4E2A;&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x3002;
-&lt;/p&gt;" data-url="https://allenwoods.github.io/2015/10/16/python-vagrant/index.html">
-    <div class="tit">分享到：</div>
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
-          豆
-        </a>
-      </li>
-    </ul>
- </div>
 
           
 
@@ -211,7 +167,7 @@ PowerShell).
 </p>
 <div class="org-src-container">
 
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">mkdir D:\DataScienceToolbox</span><br><span class="line"><span class="built_in">cd</span> D:\DataScienceToolbox</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir D:\DataScienceToolbox</span><br><span class="line"><span class="built_in">cd</span> D:\DataScienceToolbox</span><br></pre></td></tr></table></figure>
 </div>
 <p>
 &#x8FDB;&#x5165;&#x5B89;&#x88C5;&#x76EE;&#x5F55; <code>D:\DataScienceToolbox</code>.
@@ -229,7 +185,7 @@ PowerShell).
 </p>
 <div class="org-src-container">
 
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vagrant init data-science-toolbox/dst</span><br><span class="line">vagrant box add data-science-toolbox/dst .\dst.box</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">vagrant init data-science-toolbox/dst</span><br><span class="line">vagrant box add data-science-toolbox/dst .\dst.box</span><br></pre></td></tr></table></figure>
 </div>
 <p>
 <code>vagrant box add &lt;&#x73AF;&#x5883;&#x540D;&gt; &lt;&#x6587;&#x4EF6;&#x540D;&gt;</code> &#x547D;&#x4EE4;&#x5C06; <code>dst.box</code> &#x5BFC;&#x5165;&#x4E86;
@@ -265,14 +221,14 @@ PowerShell).
 </p>
 <div class="org-src-container">
 
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">config.vm.network <span class="string">&quot;forwarded_port&quot;</span>, <span class="symbol">guest:</span> <span class="number">8888</span>, <span class="symbol">host:</span> <span class="number">8888</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">config.vm.network <span class="string">&quot;forwarded_port&quot;</span>, <span class="symbol">guest:</span> <span class="number">8888</span>, <span class="symbol">host:</span> <span class="number">8888</span></span><br></pre></td></tr></table></figure>
 </div>
 <p>
 <code>vagrant ssh</code> &#x8FDB;&#x5165;&#x7CFB;&#x7EDF;&#x540E;&#xFF0C;&#x6267;&#x884C;
 </p>
 <div class="org-src-container">
 
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0</span><br></pre></td></tr></table></figure>
 </div>
 <p>
 &#x5728;&#x5BBF;&#x4E3B;&#x673A;&#x5668;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165; <code>http://localhost&#xFF1A;8888</code> &#x8FDB;&#x5165;Ipython&#x3002;
@@ -288,7 +244,7 @@ PowerShell).
 </p>
 <div class="org-src-container">
 
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">vagrant package</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vagrant package</span><br></pre></td></tr></table></figure>
 </div>
 <p>
 &#x4F1A;&#x81EA;&#x52A8;&#x6253;&#x5305;&#x5F53;&#x524D;&#x865A;&#x62DF;&#x955C;&#x50CF;&#x751F;&#x6210; <code>package.box</code>, &#x5728;&#x53E6;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x91CD;&#x590D;&#x4EE5;&#x4E0A;&#x6B65;&#x9AA4;&#xFF0C; &#x5728;&#x6DFB;&#x52A0;&#x865A;
@@ -337,46 +293,6 @@ PowerShell).
   </main>
 <div class="mask" id="mask"></div>
 <a href="javascript:;" id="gotop" class="waves-circle-light"><span class="icon icon-lg icon-chevron-up"></span></a>
-
-<div class="global-share" id="global-share" data-title="使用Vagrant打造跨平台Python环境" data-pic="/img/avatar.png" data-summary="&lt;p&gt;
-&amp;#x5047;&amp;#x671F;&amp;#x56DE;&amp;#x5BB6;&amp;#x53EA;&amp;#x80FD;&amp;#x5E26;&amp;#x7740;Windows&amp;#x7684;&amp;#x7B14;&amp;#x8BB0;&amp;#x672C;&amp;#xFF0C;&amp;#x4F46;Python&amp;#x5728;Windows&amp;#x4E0B;&amp;#x8BF8;&amp;#x591A;&amp;#x4E0D;&amp;#x4FBF;&amp;#x3002;Vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x865A;
-&amp;#x62DF;&amp;#x673A;,&amp;#x5B9E;&amp;#x73B0;&amp;#x5728;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4E0B;&amp;#x5171;&amp;#x4EAB;&amp;#x5F00;&amp;#x53D1;&amp;#x73AF;&amp;#x5883;,&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E0B;&amp;#x6574;&amp;#x4E2A;&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x3002;
-&lt;/p&gt;" data-url="https://allenwoods.github.io/2015/10/16/python-vagrant/index.html">
-    <div class="tit">分享到：</div>
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
-          豆
-        </a>
-      </li>
-    </ul>
- </div>
-
 
 <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 
