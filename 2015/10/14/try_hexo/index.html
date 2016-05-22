@@ -34,6 +34,32 @@
 
 
 
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
@@ -60,26 +86,17 @@
 
 
 
-<meta name="description" content="1 Hexo+Next
-
-
-&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA">
+<meta name="description" content="1 Hexo+Next&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Hexo和Org-mode写博客">
 <meta property="og:url" content="https://allenwoods.github.io/2015/10/14/try_hexo/index.html">
 <meta property="og:site_name" content="Onism">
-<meta property="og:description" content="1 Hexo+Next
-
-
-&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA">
+<meta property="og:description" content="1 Hexo+Next&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x">
 <meta property="og:image" content="https://allenwoods.github.io/2015/10/14/try_hexo/python-matplot-fig.png">
 <meta property="og:updated_time" content="2016-03-16T08:51:35.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo和Org-mode写博客">
-<meta name="twitter:description" content="1 Hexo+Next
-
-
-&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA">
+<meta name="twitter:description" content="1 Hexo+Next&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x">
 <meta name="twitter:image" content="https://allenwoods.github.io/2015/10/14/try_hexo/python-matplot-fig.png">
 
 
@@ -192,9 +209,32 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
   
 </nav>
 
@@ -303,133 +343,9 @@
       
 
       
-        
-
-
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Hexo+Next</h2>
-<div class="outline-text-2" id="text-1">
-<p>
-&#x4E4B;&#x524D;&#x7528; <a href="https://getnikola.com/" target="_blank" rel="external">Nikola</a> &#x8FD9;&#x4E2A;&#x5F15;&#x64CE;&#x505A;&#x4E86;&#x4E2A;&#x535A;&#x5BA2;, &#x4E4B;&#x540E;&#x5C31;&#x597D;&#x4E45;&#x6CA1;&#x66F4;&#x65B0;&#x2026;&#x4ECA;&#x5929;&#x5FC3;&#x8840;&#x6765;&#x6F6E;&#x60F3;&#x66F4;&#x65B0;&#x4E00;&#x4E0B;,&#x53D1;&#x73B0;&#x7ADF;&#x7136;&#x51FA;Bug&#x4E86;. &#x65E9;&#x5C31;&#x542C;&#x8BF4; <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a> &#x4E0D;&#x9519;, &#x5C31;&#x7528;&#x5B83;&#x91CD;&#x65B0;&#x505A;&#x4E00;&#x4E2A;&#x5427;.
-</p>
-<a id="more"></a>
-
-<p>
-Hexo&#x7684;&#x6587;&#x6863;&#x786E;&#x5B9E;&#x5F88;&#x8BE6;&#x7EC6;, &#x6309;&#x7167;&#x5B98;&#x65B9;&#x6559;&#x7A0B;&#x914D;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;. &#x4E3B;&#x9898;&#x6211;&#x7528;&#x4E86;<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a> , &#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x6587;&#x6863;
-&#x4E5F;&#x76F8;&#x5F53;&#x8D5E;, &#x6309;&#x7167;&#x4F7F;&#x7528;&#x6587;&#x6863;&#x8BBE;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x591A;&#x8BF4;&#x8BC4;&#x8BBA;&#x7B49;&#x529F;&#x80FD;.
-</p>
-</div>
-</div>
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Org-mode</h2>
-<div class="outline-text-2" id="text-2">
-<p>
-CodeFalling&#x540C;&#x5B66;&#x505A;&#x4E86;org&#x7684;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;org&#x5199;&#x535A;&#x5BA2;&#x5566;&#xFF01;
-</p>
-
-<p>
-<a href="https://github.com/CodeFalling/hexo-renderer-org" target="_blank" rel="external">CodeFalling/hexo-renderer-org</a>
-</p>
-
-<p>
-&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x53C2;&#x89C1;&#x4ED6;&#x7684;&#x535A;&#x5BA2;<a href="http://codefalling.com/2015/11/15/new-version-of-hexo-renderer-org/" target="_blank" rel="external">&#x5B8C;&#x6574;&#x7279;&#x6027;&#x7684; hexo-renderer-org</a>. &#x4F7F;&#x7528;&#x65F6;&#x6CE8;&#x610F;&#x5347;&#x7EA7;node&#xFF0C;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x4F1A;&#x51FA;&#x73B0;&#x5404;&#x79CD;&#x95EE;&#x9898;&#x2026;
-</p>
-</div>
-</div>
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> &#x663E;&#x793A;&#x6D4B;&#x8BD5;</h2>
-<div class="outline-text-2" id="text-3">
-</div><div id="outline-container-sec-3-1" class="outline-3">
-<h3 id="sec-3-1"><span class="section-number-3">3.1</span> &#x5B57;&#x4F53;</h3>
-<div class="outline-text-3" id="text-3-1">
-</div><ol class="org-ol"><li><a id="sec-3-1-1" name="sec-3-1-1"></a>&#x6B63;&#x5E38;<br><div class="outline-text-4" id="text-3-1-1">
-<ul class="org-ul">
-<li>Regular
-</li>
-<li>&#x6B63;&#x5E38;
-</li>
-</ul>
-</div>
-</li>
-<li><a id="sec-3-1-2" name="sec-3-1-2"></a>&#x659C;&#x4F53;<br><div class="outline-text-4" id="text-3-1-2">
-<ul class="org-ul">
-<li><i>Italic</i>
-</li>
-<li><i>&#x659C;&#x4F53;</i>
-</li>
-</ul>
-</div>
-</li>
-<li><a id="sec-3-1-3" name="sec-3-1-3"></a>&#x7C97;&#x4F53;<br><div class="outline-text-4" id="text-3-1-3">
-<ul class="org-ul">
-<li><b>Bold</b>
-</li>
-<li><b>&#x7C97;&#x4F53;</b>
-</li>
-</ul>
-</div>
-</li></ol>
-</div>
-<div id="outline-container-sec-3-2" class="outline-3">
-<h3 id="sec-3-2"><span class="section-number-3">3.2</span> &#x516C;&#x5F0F;</h3>
-<div class="outline-text-3" id="text-3-2">
-</div><ol class="org-ol"><li><a id="sec-3-2-1" name="sec-3-2-1"></a>&#x884C;&#x5185;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-1">
-<p>
-&#x6B27;&#x62C9;&#x516C;&#x5F0F; : \(e^{i \pi}+1=0\)
-</p>
-</div>
-</li>
-<li><a id="sec-3-2-2" name="sec-3-2-2"></a>&#x72EC;&#x7ACB;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-2">
-<p>
-\[
-e^{i \pi}+1=0
-\]
-</p>
-</div>
-</li></ol>
-</div>
-<div id="outline-container-sec-3-3" class="outline-3">
-<h3 id="sec-3-3"><span class="section-number-3">3.3</span> &#x4EE3;&#x7801;</h3>
-<div class="outline-text-3" id="text-3-3">
-</div><ol class="org-ol"><li><a id="sec-3-3-1" name="sec-3-3-1"></a>&#x751F;&#x6210;&#x56FE;&#x7247;<br><div class="outline-text-4" id="text-3-3-1">
-<p>
-&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x4E3A;&#x6587;&#x4EF6;: <code>#+BEGIN_SRC python :results file :exports both</code>
-</p>
-
-<div class="org-src-container">
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib, numpy</span><br><span class="line">matplotlib.use(<span class="string">&apos;Agg&apos;</span>)</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">filename = <span class="string">&apos;try_hexo/python-matplot-fig.png&apos;</span></span><br><span class="line">fig=plt.figure(figsize=(<span class="number">4</span>,<span class="number">2</span>))</span><br><span class="line">x=numpy.linspace(-<span class="number">15</span>,<span class="number">15</span>)</span><br><span class="line">plt.plot(numpy.sin(x)/x)</span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.savefig(filename)</span><br><span class="line"><span class="keyword">return</span> filename <span class="comment"># return filename to org-mode</span></span><br></pre></td></tr></table></figure>
-</div>
-
-<div class="figure">
-<p><img src="/2015/10/14/try_hexo/python-matplot-fig.png" alt="&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x7684;&#x56FE;&#x50CF;">
-</p>
-</div>
-</div>
-</li>
-
-
-<li><a id="sec-3-3-2" name="sec-3-3-2"></a>&#x51FD;&#x6570;&#x8F93;&#x51FA;<br><div class="outline-text-4" id="text-3-3-2">
-<p>
-&#x6307;&#x5B9A;&#x8F93;&#x51FA;: <code>#+BEGIN_SRC python :results output :exports both</code>
-</p>
-
-
-<div class="org-src-container">
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello, Blog&quot;</span>)</span><br></pre></td></tr></table></figure>
-</div>
-
-<pre class="example">
+        <div id="outline-container-sec-1" class="outline-2"><h2 id="sec-1"><span class="section-number-2">1</span> Hexo+Next</h2><div class="outline-text-2" id="text-1"><p>&#x4E4B;&#x524D;&#x7528; <a href="https://getnikola.com/" target="_blank" rel="external">Nikola</a> &#x8FD9;&#x4E2A;&#x5F15;&#x64CE;&#x505A;&#x4E86;&#x4E2A;&#x535A;&#x5BA2;, &#x4E4B;&#x540E;&#x5C31;&#x597D;&#x4E45;&#x6CA1;&#x66F4;&#x65B0;&#x2026;&#x4ECA;&#x5929;&#x5FC3;&#x8840;&#x6765;&#x6F6E;&#x60F3;&#x66F4;&#x65B0;&#x4E00;&#x4E0B;,&#x53D1;&#x73B0;&#x7ADF;&#x7136;&#x51FA;Bug&#x4E86;. &#x65E9;&#x5C31;&#x542C;&#x8BF4; <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a> &#x4E0D;&#x9519;, &#x5C31;&#x7528;&#x5B83;&#x91CD;&#x65B0;&#x505A;&#x4E00;&#x4E2A;&#x5427;.</p><a id="more"></a><p>Hexo&#x7684;&#x6587;&#x6863;&#x786E;&#x5B9E;&#x5F88;&#x8BE6;&#x7EC6;, &#x6309;&#x7167;&#x5B98;&#x65B9;&#x6559;&#x7A0B;&#x914D;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;. &#x4E3B;&#x9898;&#x6211;&#x7528;&#x4E86;<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a> , &#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x6587;&#x6863; &#x4E5F;&#x76F8;&#x5F53;&#x8D5E;, &#x6309;&#x7167;&#x4F7F;&#x7528;&#x6587;&#x6863;&#x8BBE;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x591A;&#x8BF4;&#x8BC4;&#x8BBA;&#x7B49;&#x529F;&#x80FD;.</p></div></div><div id="outline-container-sec-2" class="outline-2"><h2 id="sec-2"><span class="section-number-2">2</span> Org-mode</h2><div class="outline-text-2" id="text-2"><p>CodeFalling&#x540C;&#x5B66;&#x505A;&#x4E86;org&#x7684;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;org&#x5199;&#x535A;&#x5BA2;&#x5566;&#xFF01;</p><p><a href="https://github.com/CodeFalling/hexo-renderer-org" target="_blank" rel="external">CodeFalling/hexo-renderer-org</a></p><p>&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x53C2;&#x89C1;&#x4ED6;&#x7684;&#x535A;&#x5BA2;<a href="http://codefalling.com/2015/11/15/new-version-of-hexo-renderer-org/" target="_blank" rel="external">&#x5B8C;&#x6574;&#x7279;&#x6027;&#x7684; hexo-renderer-org</a>. &#x4F7F;&#x7528;&#x65F6;&#x6CE8;&#x610F;&#x5347;&#x7EA7;node&#xFF0C;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x4F1A;&#x51FA;&#x73B0;&#x5404;&#x79CD;&#x95EE;&#x9898;&#x2026;</p></div></div><div id="outline-container-sec-3" class="outline-2"><h2 id="sec-3"><span class="section-number-2">3</span> &#x663E;&#x793A;&#x6D4B;&#x8BD5;</h2><div class="outline-text-2" id="text-3"></div><div id="outline-container-sec-3-1" class="outline-3"><h3 id="sec-3-1"><span class="section-number-3">3.1</span> &#x5B57;&#x4F53;</h3><div class="outline-text-3" id="text-3-1"></div><ol class="org-ol"><li><a id="sec-3-1-1" name="sec-3-1-1"></a>&#x6B63;&#x5E38;<br><div class="outline-text-4" id="text-3-1-1"><ul class="org-ul"><li>Regular</li><li>&#x6B63;&#x5E38;</li></ul></div></li><li><a id="sec-3-1-2" name="sec-3-1-2"></a>&#x659C;&#x4F53;<br><div class="outline-text-4" id="text-3-1-2"><ul class="org-ul"><li><i>Italic</i></li><li><i>&#x659C;&#x4F53;</i></li></ul></div></li><li><a id="sec-3-1-3" name="sec-3-1-3"></a>&#x7C97;&#x4F53;<br><div class="outline-text-4" id="text-3-1-3"><ul class="org-ul"><li><b>Bold</b></li><li><b>&#x7C97;&#x4F53;</b></li></ul></div></li></ol></div><div id="outline-container-sec-3-2" class="outline-3"><h3 id="sec-3-2"><span class="section-number-3">3.2</span> &#x516C;&#x5F0F;</h3><div class="outline-text-3" id="text-3-2"></div><ol class="org-ol"><li><a id="sec-3-2-1" name="sec-3-2-1"></a>&#x884C;&#x5185;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-1"><p>&#x6B27;&#x62C9;&#x516C;&#x5F0F; : \(e^{i \pi}+1=0\)</p></div></li><li><a id="sec-3-2-2" name="sec-3-2-2"></a>&#x72EC;&#x7ACB;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-2"><p>\[ e^{i \pi}+1=0 \]</p></div></li></ol></div><div id="outline-container-sec-3-3" class="outline-3"><h3 id="sec-3-3"><span class="section-number-3">3.3</span> &#x4EE3;&#x7801;</h3><div class="outline-text-3" id="text-3-3"></div><ol class="org-ol"><li><a id="sec-3-3-1" name="sec-3-3-1"></a>&#x751F;&#x6210;&#x56FE;&#x7247;<br><div class="outline-text-4" id="text-3-3-1"><p>&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x4E3A;&#x6587;&#x4EF6;: <code>#+BEGIN_SRC python :results file :exports both</code></p><div class="org-src-container"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib, numpy</span><br><span class="line">matplotlib.use(<span class="string">&apos;Agg&apos;</span>)</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">filename = <span class="string">&apos;try_hexo/python-matplot-fig.png&apos;</span></span><br><span class="line">fig=plt.figure(figsize=(<span class="number">4</span>,<span class="number">2</span>))</span><br><span class="line">x=numpy.linspace(-<span class="number">15</span>,<span class="number">15</span>)</span><br><span class="line">plt.plot(numpy.sin(x)/x)</span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.savefig(filename)</span><br><span class="line"><span class="keyword">return</span> filename <span class="comment"># return filename to org-mode</span></span><br></pre></td></tr></table></figure></div><div class="figure"><p><img src="/2015/10/14/try_hexo/python-matplot-fig.png" alt="&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x7684;&#x56FE;&#x50CF;"></p></div></div></li><li><a id="sec-3-3-2" name="sec-3-3-2"></a>&#x51FD;&#x6570;&#x8F93;&#x51FA;<br><div class="outline-text-4" id="text-3-3-2"><p>&#x6307;&#x5B9A;&#x8F93;&#x51FA;: <code>#+BEGIN_SRC python :results output :exports both</code></p><div class="org-src-container"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello, Blog&quot;</span>)</span><br></pre></td></tr></table></figure></div><pre class="example">
 Hello, Blog
-</pre>
-</div>
-</li></ol>
-</div>
-</div>
-
-<p style="color:Silver;float:right;">Render by <a href="https://github.com/CodeFalling/hexo-renderer-org" style="color:SkyBlue" target="_blank" rel="external">hexo-renderer-org</a></p><br><br><br>
-
+</pre></div></li></ol></div></div><p style="color:Silver;float:right">Render by <a href="https://github.com/CodeFalling/hexo-renderer-org" style="color:#87ceeb" target="_blank" rel="external">hexo-renderer-org</a></p><br><br><br>
       
     </div>
 
@@ -737,6 +653,135 @@ Hello, Blog
 
   
   
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
   
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -756,7 +801,7 @@ Hello, Blog
       }
     });
   </script>
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
   

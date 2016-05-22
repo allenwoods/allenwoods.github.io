@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://allenwoods.github.io/about/index.html</loc>
+    
+    <lastmod>2016-05-22T03:14:53.561Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://allenwoods.github.io/2015/10/16/python-vagrant/</loc>
     
     <lastmod>2016-05-22T02:57:20.693Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://allenwoods.github.io/2015/10/15/ladot-intro/</loc>
     
     <lastmod>2016-01-08T09:28:45.609Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://allenwoods.github.io/about/index.html</loc>
-    
-    <lastmod>2015-10-15T09:10:28.762Z</lastmod>
     
   </url>
   
