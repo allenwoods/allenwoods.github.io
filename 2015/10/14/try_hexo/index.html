@@ -1,571 +1,478 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next mist use-motion">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
+  <meta charset="utf-8">
   
+  <title>使用Hexo和Org-mode写博客 | Onism | The little world I&#39;ve experinced</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <meta name="keywords" content="Web">
+  <meta name="description" content="1 Hexo+Next
 
 
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.useso.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Web," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Onism" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="1 Hexo+Next&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x">
+&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Hexo和Org-mode写博客">
 <meta property="og:url" content="https://allenwoods.github.io/2015/10/14/try_hexo/index.html">
 <meta property="og:site_name" content="Onism">
-<meta property="og:description" content="1 Hexo+Next&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x">
+<meta property="og:description" content="1 Hexo+Next
+
+
+&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA">
 <meta property="og:image" content="https://allenwoods.github.io/2015/10/14/try_hexo/python-matplot-fig.png">
 <meta property="og:updated_time" content="2016-03-16T08:51:35.294Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Hexo和Org-mode写博客">
-<meta name="twitter:description" content="1 Hexo+Next&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x">
+<meta name="twitter:description" content="1 Hexo+Next
+
+
+&amp;#x4E4B;&amp;#x524D;&amp;#x7528; Nikola &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA">
 <meta name="twitter:image" content="https://allenwoods.github.io/2015/10/14/try_hexo/python-matplot-fig.png">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 0,
-      author: '博主'
-    }
-  };
-</script>
-
-  <title> 使用Hexo和Org-mode写博客 | Onism </title>
+  
+    <link rel="alternative" href="/atom.xml" title="Onism" type="application/atom+xml">
+  
+  <meta name="summary" content="&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Hexo+Next&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&amp;#x4E4B;&amp;#x524D;&amp;#x7528; &lt;a href=&quot;https://getnikola.com/&quot;&gt;Nikola&lt;/a&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x5929;&amp;#x5FC3;&amp;#x8840;&amp;#x6765;&amp;#x6F6E;&amp;#x60F3;&amp;#x66F4;&amp;#x65B0;&amp;#x4E00;&amp;#x4E0B;,&amp;#x53D1;&amp;#x73B0;&amp;#x7ADF;&amp;#x7136;&amp;#x51FA;Bug&amp;#x4E86;. &amp;#x65E9;&amp;#x5C31;&amp;#x542C;&amp;#x8BF4; &lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt; &amp;#x4E0D;&amp;#x9519;, &amp;#x5C31;&amp;#x7528;&amp;#x5B83;&amp;#x91CD;&amp;#x65B0;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x5427;.
+&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body>
+  <div id="loading" class="active"></div>
 
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Onism</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+  <nav id="menu" class="hide" >
+   <div class="inner flex-row-vertical">
+  <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+      <i class="icon icon-lg icon-close"></i>
+  </a>
+  <div class="brand-wrap">
+    <div class="brand">
+      <a href="/" class="avatar"><img src="/img/avatar.png"></a>
+      <hgroup class="introduce">
+        <h5 class="nickname">加加林</h5>
+        <a href="mailto:undefined" title="allen.woods@foxmail.com" class="mail">allen.woods@foxmail.com</a>
+      </hgroup>
+    </div>
   </div>
-  <p class="site-subtitle">The little world I've experinced</p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
+  <ul class="nav flex-col">
+    
+        <li class="waves-block waves-effect">
+          <a href="/"  >
+            <i class="icon icon-lg icon-home"></i>
             首页
           </a>
         </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
+    
+        <li class="waves-block waves-effect">
+          <a href="/archives"  >
+            <i class="icon icon-lg icon-archives"></i>
+            存档
           </a>
         </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
+    
+        <li class="waves-block waves-effect">
+          <a href="/tags"  >
+            <i class="icon icon-lg icon-tags"></i>
             标签
           </a>
         </li>
-      
+    
+        <li class="waves-block waves-effect">
+          <a href="https://github.com/allenwoods" target="_blank" >
+            <i class="icon icon-lg icon-github"></i>
+            Github
+          </a>
+        </li>
+    
+  </ul>
+
+  <footer class="footer">
+  <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;vertical-align:middle;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAA4UlEQVR42q2T1xqCMAyFk7QsBQeKA9x7j/d/OSm22CpX0nzcpA1/T05aAOuBVkMAScQFHLnEwoCo2f1TnQIGoVMewjZEjVFN4GH1Ue1Cn2jWqwfsOOj6wDwGvotsl/c8lv7KIq1eLOsT0HMFHMIE/RZyHnlphryT9zyV+8WH5e8yQw3wnQvgAFxPTKUVi555SHR/lOfLMgVTeDlSfN+TaoUsiTyeIm+bCkHvCA2FUKG48LDtYBZBknsYP/G8NTw0gaaHyuQf4H5pecrB/FYCT2sL9zAfy1Xyjou6L8X2W7YcLyBZCRtnq/zfAAAAAElFTkSuQmCC" /></a></p>
+  <p>Onism &copy; 2016</p>
+  <p>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+  <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></p>
+  <a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-2x icon-rss-square"></i></a>
+</footer>
+
+</div>
+
+  </nav>
+  <main id="main">
+    <header class="header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">使用Hexo和Org-mode写博客</div>
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input " autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-share">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header">
+  <div class="container">
+    <h1 class="author">使用Hexo和Org-mode写博客</h1>
+    <h5 class="subtitle">2015-10-14</h5>
+  </div>
+</header>
 
+    <div class="container body-wrap">
       
-        <li class="menu-item menu-item-search">
+  <article id="post-try_hexo" class="article article-type-post" itemprop="blogPost">
+    
+      <div class="post-meat flex-row">
+        <div class="flex-col">
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li></ul>
+</div>
+      </div>
+      <div class="post-body">
+
+        <aside class="post-widget" id="post-widget">
+
           
-            <a href="#" class="popup-trigger">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
+          <div class="post-share" id="post-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
     </ul>
-  
+ </div>
 
-  
-    <div class="site-search">
-      
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+          
+
+          
+          <nav class="post-toc-wrap" id="post-toc">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sec-1"><span class="post-toc-text">1 Hexo+Next</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sec-2"><span class="post-toc-text">2 Org-mode</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#sec-3"><span class="post-toc-text">3 显示测试</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sec-3-1"><span class="post-toc-text">3.1 字体</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sec-3-2"><span class="post-toc-text">3.2 公式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#sec-3-3"><span class="post-toc-text">3.3 代码</span></a></li></ol></li></ol>
+          </nav>
+          
+        </aside>
+
+        <div class="post-main">
+
+            <div class="post-content" id="post-content" itemprop="postContent">
+
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Hexo+Next</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+&#x4E4B;&#x524D;&#x7528; <a href="https://getnikola.com/" target="_blank" rel="external">Nikola</a> &#x8FD9;&#x4E2A;&#x5F15;&#x64CE;&#x505A;&#x4E86;&#x4E2A;&#x535A;&#x5BA2;, &#x4E4B;&#x540E;&#x5C31;&#x597D;&#x4E45;&#x6CA1;&#x66F4;&#x65B0;&#x2026;&#x4ECA;&#x5929;&#x5FC3;&#x8840;&#x6765;&#x6F6E;&#x60F3;&#x66F4;&#x65B0;&#x4E00;&#x4E0B;,&#x53D1;&#x73B0;&#x7ADF;&#x7136;&#x51FA;Bug&#x4E86;. &#x65E9;&#x5C31;&#x542C;&#x8BF4; <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a> &#x4E0D;&#x9519;, &#x5C31;&#x7528;&#x5B83;&#x91CD;&#x65B0;&#x505A;&#x4E00;&#x4E2A;&#x5427;.
+</p>
+<a id="more"></a>
+
+<p>
+Hexo&#x7684;&#x6587;&#x6863;&#x786E;&#x5B9E;&#x5F88;&#x8BE6;&#x7EC6;, &#x6309;&#x7167;&#x5B98;&#x65B9;&#x6559;&#x7A0B;&#x914D;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;. &#x4E3B;&#x9898;&#x6211;&#x7528;&#x4E86;<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a> , &#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x6587;&#x6863;
+&#x4E5F;&#x76F8;&#x5F53;&#x8D5E;, &#x6309;&#x7167;&#x4F7F;&#x7528;&#x6587;&#x6863;&#x8BBE;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x591A;&#x8BF4;&#x8BC4;&#x8BBA;&#x7B49;&#x529F;&#x80FD;.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Org-mode</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+CodeFalling&#x540C;&#x5B66;&#x505A;&#x4E86;org&#x7684;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;org&#x5199;&#x535A;&#x5BA2;&#x5566;&#xFF01;
+</p>
+
+<p>
+<a href="https://github.com/CodeFalling/hexo-renderer-org" target="_blank" rel="external">CodeFalling/hexo-renderer-org</a>
+</p>
+
+<p>
+&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x53C2;&#x89C1;&#x4ED6;&#x7684;&#x535A;&#x5BA2;<a href="http://codefalling.com/2015/11/15/new-version-of-hexo-renderer-org/" target="_blank" rel="external">&#x5B8C;&#x6574;&#x7279;&#x6027;&#x7684; hexo-renderer-org</a>. &#x4F7F;&#x7528;&#x65F6;&#x6CE8;&#x610F;&#x5347;&#x7EA7;node&#xFF0C;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x4F1A;&#x51FA;&#x73B0;&#x5404;&#x79CD;&#x95EE;&#x9898;&#x2026;
+</p>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> &#x663E;&#x793A;&#x6D4B;&#x8BD5;</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> &#x5B57;&#x4F53;</h3>
+<div class="outline-text-3" id="text-3-1">
+</div><ol class="org-ol"><li><a id="sec-3-1-1" name="sec-3-1-1"></a>&#x6B63;&#x5E38;<br><div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>Regular
+</li>
+<li>&#x6B63;&#x5E38;
+</li>
+</ul>
+</div>
+</li>
+<li><a id="sec-3-1-2" name="sec-3-1-2"></a>&#x659C;&#x4F53;<br><div class="outline-text-4" id="text-3-1-2">
+<ul class="org-ul">
+<li><i>Italic</i>
+</li>
+<li><i>&#x659C;&#x4F53;</i>
+</li>
+</ul>
+</div>
+</li>
+<li><a id="sec-3-1-3" name="sec-3-1-3"></a>&#x7C97;&#x4F53;<br><div class="outline-text-4" id="text-3-1-3">
+<ul class="org-ul">
+<li><b>Bold</b>
+</li>
+<li><b>&#x7C97;&#x4F53;</b>
+</li>
+</ul>
+</div>
+</li></ol>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> &#x516C;&#x5F0F;</h3>
+<div class="outline-text-3" id="text-3-2">
+</div><ol class="org-ol"><li><a id="sec-3-2-1" name="sec-3-2-1"></a>&#x884C;&#x5185;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-1">
+<p>
+&#x6B27;&#x62C9;&#x516C;&#x5F0F; : \(e^{i \pi}+1=0\)
+</p>
+</div>
+</li>
+<li><a id="sec-3-2-2" name="sec-3-2-2"></a>&#x72EC;&#x7ACB;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-2">
+<p>
+\[
+e^{i \pi}+1=0
+\]
+</p>
+</div>
+</li></ol>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> &#x4EE3;&#x7801;</h3>
+<div class="outline-text-3" id="text-3-3">
+</div><ol class="org-ol"><li><a id="sec-3-3-1" name="sec-3-3-1"></a>&#x751F;&#x6210;&#x56FE;&#x7247;<br><div class="outline-text-4" id="text-3-3-1">
+<p>
+&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x4E3A;&#x6587;&#x4EF6;: <code>#+BEGIN_SRC python :results file :exports both</code>
+</p>
+
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib, numpy</span><br><span class="line">matplotlib.use(<span class="string">&apos;Agg&apos;</span>)</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">filename = <span class="string">&apos;try_hexo/python-matplot-fig.png&apos;</span></span><br><span class="line">fig=plt.figure(figsize=(<span class="number">4</span>,<span class="number">2</span>))</span><br><span class="line">x=numpy.linspace(-<span class="number">15</span>,<span class="number">15</span>)</span><br><span class="line">plt.plot(numpy.sin(x)/x)</span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.savefig(filename)</span><br><span class="line"><span class="keyword">return</span> filename <span class="comment"># return filename to org-mode</span></span><br></pre></td></tr></table></figure>
+</div>
+
+<div class="figure">
+<p><img src="/2015/10/14/try_hexo/python-matplot-fig.png" alt="&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x7684;&#x56FE;&#x50CF;">
+</p>
+</div>
+</div>
+</li>
+
+
+<li><a id="sec-3-3-2" name="sec-3-3-2"></a>&#x51FD;&#x6570;&#x8F93;&#x51FA;<br><div class="outline-text-4" id="text-3-3-2">
+<p>
+&#x6307;&#x5B9A;&#x8F93;&#x51FA;: <code>#+BEGIN_SRC python :results output :exports both</code>
+</p>
+
+
+<div class="org-src-container">
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello, Blog&quot;</span>)</span><br></pre></td></tr></table></figure>
+</div>
+
+<pre class="example">
+Hello, Blog
+</pre>
+</div>
+</li></ol>
+</div>
+</div>
+
+<p style="color:Silver;float:right;">Render by <a href="https://github.com/CodeFalling/hexo-renderer-org" style="color:SkyBlue" target="_blank" rel="external">hexo-renderer-org</a></p><br><br><br>
+</div>
+
+            
+<nav class="post-nav flex-row">
+  <div class="flex-col waves-block waves-effect prev">
+    
+      <a href="/2015/10/15/ladot-intro/" title="使用Graphviz制作带数学公式的流程图" id="post-prev" class="post-nav-link">
+        <i class="icon icon-chevron-left"></i>
+        <span class="article-nav-title">上一篇</span>
+      </a>
+    
+  </div>
+  <div class="flex-col waves-block waves-effect next">
+    
+  </div>
+
+</nav>
+
+
+
+            
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="try_hexo" data-title="使用Hexo和Org-mode写博客" data-url="https://allenwoods.github.io/2015/10/14/try_hexo/index.html"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"allenwoods"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
 </div>
 
 
-    </div>
-  
-</nav>
 
- </div>
-    </header>
 
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
 
-  <div id="posts" class="posts-expand">
+
+        </div>
+
+      </div>
+
     
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                使用Hexo和Org-mode写博客
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-10-14T00:00:00+08:00" content="2015-10-14">
-              2015-10-14
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术/" itemprop="url" rel="index">
-                    <span itemprop="name">技术</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/10/14/try_hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/10/14/try_hexo/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/10/14/try_hexo/" class="leancloud_visitors" data-flag-title="使用Hexo和Org-mode写博客">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <div id="outline-container-sec-1" class="outline-2"><h2 id="sec-1"><span class="section-number-2">1</span> Hexo+Next</h2><div class="outline-text-2" id="text-1"><p>&#x4E4B;&#x524D;&#x7528; <a href="https://getnikola.com/" target="_blank" rel="external">Nikola</a> &#x8FD9;&#x4E2A;&#x5F15;&#x64CE;&#x505A;&#x4E86;&#x4E2A;&#x535A;&#x5BA2;, &#x4E4B;&#x540E;&#x5C31;&#x597D;&#x4E45;&#x6CA1;&#x66F4;&#x65B0;&#x2026;&#x4ECA;&#x5929;&#x5FC3;&#x8840;&#x6765;&#x6F6E;&#x60F3;&#x66F4;&#x65B0;&#x4E00;&#x4E0B;,&#x53D1;&#x73B0;&#x7ADF;&#x7136;&#x51FA;Bug&#x4E86;. &#x65E9;&#x5C31;&#x542C;&#x8BF4; <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a> &#x4E0D;&#x9519;, &#x5C31;&#x7528;&#x5B83;&#x91CD;&#x65B0;&#x505A;&#x4E00;&#x4E2A;&#x5427;.</p><a id="more"></a><p>Hexo&#x7684;&#x6587;&#x6863;&#x786E;&#x5B9E;&#x5F88;&#x8BE6;&#x7EC6;, &#x6309;&#x7167;&#x5B98;&#x65B9;&#x6559;&#x7A0B;&#x914D;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;. &#x4E3B;&#x9898;&#x6211;&#x7528;&#x4E86;<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">Next</a> , &#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x6587;&#x6863; &#x4E5F;&#x76F8;&#x5F53;&#x8D5E;, &#x6309;&#x7167;&#x4F7F;&#x7528;&#x6587;&#x6863;&#x8BBE;&#x7F6E;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x591A;&#x8BF4;&#x8BC4;&#x8BBA;&#x7B49;&#x529F;&#x80FD;.</p></div></div><div id="outline-container-sec-2" class="outline-2"><h2 id="sec-2"><span class="section-number-2">2</span> Org-mode</h2><div class="outline-text-2" id="text-2"><p>CodeFalling&#x540C;&#x5B66;&#x505A;&#x4E86;org&#x7684;&#x6E32;&#x67D3;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;org&#x5199;&#x535A;&#x5BA2;&#x5566;&#xFF01;</p><p><a href="https://github.com/CodeFalling/hexo-renderer-org" target="_blank" rel="external">CodeFalling/hexo-renderer-org</a></p><p>&#x8BE6;&#x7EC6;&#x8BF4;&#x660E;&#x53C2;&#x89C1;&#x4ED6;&#x7684;&#x535A;&#x5BA2;<a href="http://codefalling.com/2015/11/15/new-version-of-hexo-renderer-org/" target="_blank" rel="external">&#x5B8C;&#x6574;&#x7279;&#x6027;&#x7684; hexo-renderer-org</a>. &#x4F7F;&#x7528;&#x65F6;&#x6CE8;&#x610F;&#x5347;&#x7EA7;node&#xFF0C;&#x7248;&#x672C;&#x592A;&#x4F4E;&#x4F1A;&#x51FA;&#x73B0;&#x5404;&#x79CD;&#x95EE;&#x9898;&#x2026;</p></div></div><div id="outline-container-sec-3" class="outline-2"><h2 id="sec-3"><span class="section-number-2">3</span> &#x663E;&#x793A;&#x6D4B;&#x8BD5;</h2><div class="outline-text-2" id="text-3"></div><div id="outline-container-sec-3-1" class="outline-3"><h3 id="sec-3-1"><span class="section-number-3">3.1</span> &#x5B57;&#x4F53;</h3><div class="outline-text-3" id="text-3-1"></div><ol class="org-ol"><li><a id="sec-3-1-1" name="sec-3-1-1"></a>&#x6B63;&#x5E38;<br><div class="outline-text-4" id="text-3-1-1"><ul class="org-ul"><li>Regular</li><li>&#x6B63;&#x5E38;</li></ul></div></li><li><a id="sec-3-1-2" name="sec-3-1-2"></a>&#x659C;&#x4F53;<br><div class="outline-text-4" id="text-3-1-2"><ul class="org-ul"><li><i>Italic</i></li><li><i>&#x659C;&#x4F53;</i></li></ul></div></li><li><a id="sec-3-1-3" name="sec-3-1-3"></a>&#x7C97;&#x4F53;<br><div class="outline-text-4" id="text-3-1-3"><ul class="org-ul"><li><b>Bold</b></li><li><b>&#x7C97;&#x4F53;</b></li></ul></div></li></ol></div><div id="outline-container-sec-3-2" class="outline-3"><h3 id="sec-3-2"><span class="section-number-3">3.2</span> &#x516C;&#x5F0F;</h3><div class="outline-text-3" id="text-3-2"></div><ol class="org-ol"><li><a id="sec-3-2-1" name="sec-3-2-1"></a>&#x884C;&#x5185;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-1"><p>&#x6B27;&#x62C9;&#x516C;&#x5F0F; : \(e^{i \pi}+1=0\)</p></div></li><li><a id="sec-3-2-2" name="sec-3-2-2"></a>&#x72EC;&#x7ACB;&#x516C;&#x5F0F;<br><div class="outline-text-4" id="text-3-2-2"><p>\[ e^{i \pi}+1=0 \]</p></div></li></ol></div><div id="outline-container-sec-3-3" class="outline-3"><h3 id="sec-3-3"><span class="section-number-3">3.3</span> &#x4EE3;&#x7801;</h3><div class="outline-text-3" id="text-3-3"></div><ol class="org-ol"><li><a id="sec-3-3-1" name="sec-3-3-1"></a>&#x751F;&#x6210;&#x56FE;&#x7247;<br><div class="outline-text-4" id="text-3-3-1"><p>&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x4E3A;&#x6587;&#x4EF6;: <code>#+BEGIN_SRC python :results file :exports both</code></p><div class="org-src-container"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib, numpy</span><br><span class="line">matplotlib.use(<span class="string">&apos;Agg&apos;</span>)</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">filename = <span class="string">&apos;try_hexo/python-matplot-fig.png&apos;</span></span><br><span class="line">fig=plt.figure(figsize=(<span class="number">4</span>,<span class="number">2</span>))</span><br><span class="line">x=numpy.linspace(-<span class="number">15</span>,<span class="number">15</span>)</span><br><span class="line">plt.plot(numpy.sin(x)/x)</span><br><span class="line">fig.tight_layout()</span><br><span class="line">plt.savefig(filename)</span><br><span class="line"><span class="keyword">return</span> filename <span class="comment"># return filename to org-mode</span></span><br></pre></td></tr></table></figure></div><div class="figure"><p><img src="/2015/10/14/try_hexo/python-matplot-fig.png" alt="&#x51FD;&#x6570;&#x8F93;&#x51FA;&#x7684;&#x56FE;&#x50CF;"></p></div></div></li><li><a id="sec-3-3-2" name="sec-3-3-2"></a>&#x51FD;&#x6570;&#x8F93;&#x51FA;<br><div class="outline-text-4" id="text-3-3-2"><p>&#x6307;&#x5B9A;&#x8F93;&#x51FA;: <code>#+BEGIN_SRC python :results output :exports both</code></p><div class="org-src-container"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello, Blog&quot;</span>)</span><br></pre></td></tr></table></figure></div><pre class="example">
-Hello, Blog
-</pre></div></li></ol></div></div><p style="color:Silver;float:right">Render by <a href="https://github.com/CodeFalling/hexo-renderer-org" style="color:#87ceeb" target="_blank" rel="external">hexo-renderer-org</a></p><br><br><br>
-      
-    </div>
-
-    <div>
-      
-        
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Web/" rel="tag">#Web</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/10/15/ladot-intro/" rel="prev" title="使用Graphviz制作带数学公式的流程图">
-                使用Graphviz制作带数学公式的流程图 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
   </article>
 
 
 
-    <div class="post-spread">
-      
     </div>
-  </div>
+  </main>
+<div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+<script>
+var BLOG_SHARE = {
+    title: "使用Hexo和Org-mode写博客",
+    pic: "/img/avatar.png",
+    summary: document.getElementsByName('summary')[0].content,
+    url: "https://allenwoods.github.io/2015/10/14/try_hexo/index.html"
+};
+</script>
+<div class="global-share" id="global-share">
+    <div class="tit">分享到：</div>
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" href="javascript:;" data-title="微博" data-service="tsina">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns" href="javascript:;" data-title="微信" data-service="weixin">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" href="javascript:;" data-title=" QQ" data-service="cqq">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" href="javascript:;" data-title=" Facebook" data-service="fb">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" href="javascript:;" data-title=" Twitter" data-service="twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="douban share-sns" href="javascript:;" data-title="豆瓣" data-service="douban">
+          豆
+        </a>
+      </li>
+    </ul>
+ </div>
 
 
-          </div>
-          
+
+<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script src="/js/main.js"></script>
 
 
-          
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2015/10/14/try_hexo/"
-           data-title="使用Hexo和Org-mode写博客" data-url="https://allenwoods.github.io/2015/10/14/try_hexo/">
-      </div>
-    
-  </div>
 
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
-               alt="加加林" />
-          <p class="site-author-name" itemprop="name">加加林</p>
-          <p class="site-description motion-element" itemprop="description">朝闻道,夕死可矣</p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/">
-              <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<script type="text/template" id="search-tpl">
+<li class="item">
+    <a href="/{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
             </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
+            <time class="flex-col time">{date}</time>
         </div>
+    </a>
+</li>
+</script>
 
-        
-        
-          <div class="cc-license motion-element" itemprop="license">
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0" class="cc-opacity" target="_blank">
-              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
-            </a>
-          </div>
-        
-
-        
-        
-
-      </section>
-
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-            
-              
-            
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#sec-1"><span class="nav-number">1.</span> <span class="nav-text">1 Hexo+Next</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sec-2"><span class="nav-number">2.</span> <span class="nav-text">2 Org-mode</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sec-3"><span class="nav-number">3.</span> <span class="nav-text">3 显示测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sec-3-1"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sec-3-2"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sec-3-3"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 代码</span></a></li></ol></li></ol></div>
-            
-          </div>
-        </section>
-      
-
-    </div>
-  </aside>
+<script src="/js/search.js"></script>
 
 
-        
-      </div>
-    </main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2016</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">加加林</span>
-</div>
+<! -- mathjax config similar to math.stackexchange -->
 
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
 
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
 
@@ -574,338 +481,6 @@ Hello, Blog
 
 
 
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"allenwoods"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-  
-
-
-
-
-
-  
-  
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length == 0) {
-       search_path = "search.xml";
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
-      $('.popup').toggle();
-
-    }
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        async: true,
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
-                    }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
-                            
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
-                    }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
-        }
-    });}
-
-    // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
-      e.stopPropagation();
-      if (isfetched == false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-
-    });
-
-    $('.popup-btn-close').click(function(e){
-      $('.popup').hide();
-      $(".popoverlay").remove();
-      $('body').css('overflow', '');
-    });
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-  </script>
-
-  
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-  </script>
-
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-  </script>
-  <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("oyJAvdaPWfTgGIyfT4QXCowV-gzGzoHsz", "vQk47SV6BBcVRzNK6c0El41S");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
 
 
 <!-- Begin: Injected MathJax -->

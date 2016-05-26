@@ -22,11 +22,141 @@
     <published>2015-10-15T16:00:00.000Z</published>
     <updated>2016-05-22T02:57:20.693Z</updated>
     
-    <content type="html">&lt;p&gt;&amp;#x5047;&amp;#x671F;&amp;#x56DE;&amp;#x5BB6;&amp;#x53EA;&amp;#x80FD;&amp;#x5E26;&amp;#x7740;Windows&amp;#x7684;&amp;#x7B14;&amp;#x8BB0;&amp;#x672C;&amp;#xFF0C;&amp;#x4F46;Python&amp;#x5728;Windows&amp;#x4E0B;&amp;#x8BF8;&amp;#x591A;&amp;#x4E0D;&amp;#x4FBF;&amp;#x3002;Vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x865A; &amp;#x62DF;&amp;#x673A;,&amp;#x5B9E;&amp;#x73B0;&amp;#x5728;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4E0B;&amp;#x5171;&amp;#x4EAB;&amp;#x5F00;&amp;#x53D1;&amp;#x73AF;&amp;#x5883;,&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E0B;&amp;#x6574;&amp;#x4E2A;&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x3002;&lt;/p&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x5B89;&amp;#x88C5;Prerequisite&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Virtualbox&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.vagrantup.com/downloads.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vagrant&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Putty&lt;/a&gt; (Windows&amp;#x7CFB;&amp;#x7EDF;&amp;#xFF0C;&amp;#x5982;&amp;#x65E0;cygwin&amp;#x5FC5;&amp;#x987B;&amp;#x5B89;&amp;#x88C5;)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &amp;#x914D;&amp;#x7F6E;Vagrant&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;&lt;p&gt;&lt;img src=&quot;/2015/10/16/python-vagrant/Vagrant.png&quot;&gt; &amp;#x5B89;&amp;#x88C5;&amp;#x4E0A;&amp;#x8FF0;&amp;#x8F6F;&amp;#x4EF6;&amp;#x540E;(&amp;#x53EF;&amp;#x80FD;&amp;#x9700;&amp;#x8981;&amp;#x91CD;&amp;#x542F;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;), &amp;#x8FDB;&amp;#x5165;&amp;#x547D;&amp;#x4EE4;&amp;#x884C;(Linux/OSX&amp;#x7684;shell&amp;#x6216;&amp;#x662F;Windwos&amp;#x4E0B;&amp;#x7684; PowerShell).&lt;/p&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-2-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.1&lt;/span&gt; &amp;#x521B;&amp;#x5EFA;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-1&quot;&gt;&lt;p&gt;&amp;#x9996;&amp;#x5148;&amp;#x786E;&amp;#x5B9A;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;,&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x8FDB;&amp;#x5165;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55; &lt;code&gt;D:\DataScienceToolbox&lt;/code&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-2-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.2&lt;/span&gt; &amp;#x5B89;&amp;#x88C5;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-2&quot;&gt;&lt;p&gt;&amp;#x7531;&amp;#x4E8E;&amp;#x56FD;&amp;#x5185;&amp;#x7F51;&amp;#x7EDC;&amp;#x7684;&amp;#x539F;&amp;#x56E0;, &amp;#x4E0B;&amp;#x8F7D;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x6587;&amp;#x4EF6;&amp;#x901F;&amp;#x5EA6;&amp;#x5947;&amp;#x6162;, &amp;#x5EFA;&amp;#x8BAE;&amp;#x4F7F;&amp;#x7528;&amp;#x5176;&amp;#x4ED6;&amp;#x65B9;&amp;#x5F0F;&amp;#x4E0B;&amp;#x8F7D;&amp;#x3002; &amp;#x5047;&amp;#x8BBE;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x6587;&amp;#x4EF6;&amp;#x5728;&amp;#x5F53;&amp;#x524D;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;, &amp;#x6587;&amp;#x4EF6;&amp;#x540D;&amp;#x4E3A; &lt;code&gt;dst.box&lt;/code&gt; &amp;#x9996;&amp;#x5148;&amp;#x6267;&amp;#x884C;&amp;#x4EE5;&amp;#x4E0B;&amp;#x547D;&amp;#x4EE4;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant init data-science-toolbox/dst&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vagrant box add data-science-toolbox/dst .\dst.box&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;vagrant box add &amp;lt;&amp;#x73AF;&amp;#x5883;&amp;#x540D;&amp;gt; &amp;lt;&amp;#x6587;&amp;#x4EF6;&amp;#x540D;&amp;gt;&lt;/code&gt; &amp;#x547D;&amp;#x4EE4;&amp;#x5C06; &lt;code&gt;dst.box&lt;/code&gt; &amp;#x5BFC;&amp;#x5165;&amp;#x4E86; &lt;code&gt;data-science-toolbox/dst&lt;/code&gt; &amp;#x914D;&amp;#x7F6E;&amp;#x5185;&amp;#x3002;&lt;/p&gt;&lt;p&gt;&amp;#x81F3;&amp;#x6B64;Vagrant&amp;#x5C31;&amp;#x7B97;&amp;#x88C5;&amp;#x597D;&amp;#x4E86;&amp;#xFF0C; &amp;#x6267;&amp;#x884C; &lt;code&gt;vagrant up&lt;/code&gt; &amp;#x542F;&amp;#x52A8;&amp;#x865A;&amp;#x62DF;&amp;#x673A;&amp;#xFF0C; &lt;code&gt;vagrant ssh&lt;/code&gt; &amp;#x767B;&amp;#x9646;&amp;#x73AF;&amp;#x5883; &amp;#xFF08;&amp;#x5982;&amp;#x51FA;&amp;#x9519;&amp;#x9700;&amp;#x8981;&amp;#x4F7F;&amp;#x7528;putty&amp;#x767B;&amp;#x9646;&amp;#xFF09;&amp;#x3002;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &amp;#x914D;&amp;#x7F6E;Python&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-3-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.1&lt;/span&gt; &amp;#x5B89;&amp;#x88C5;Anaconda&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://www.continuum.io/downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Anaconda&lt;/a&gt; &amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x4F18;&amp;#x79C0;&amp;#x7684;Python&amp;#x53D1;&amp;#x578B;&amp;#x7248;&amp;#xFF0C;&amp;#x5185;&amp;#x7F6E;&amp;#x4E86;&amp;#x5B8C;&amp;#x6574;&amp;#x7684;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&amp;#x5E93;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5B89;&amp;#x88C5;&amp;#x3002; &amp;#x5B89;&amp;#x88C5;&amp;#x65F6;&amp;#x6CE8;&amp;#x610F;&amp;#xFF0C;Vagrant&amp;#x7684;&amp;#x5171;&amp;#x4EAB;&amp;#x76EE;&amp;#x5F55;&amp;#x9ED8;&amp;#x8BA4;&amp;#x8BBE;&amp;#x7F6E;&amp;#x5728;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;&amp;#x5185;&amp;#xFF0C;&amp;#x865A;&amp;#x62DF;&amp;#x673A;&amp;#x73AF;&amp;#x5883;&amp;#x5185;&amp;#x4F7F;&amp;#x7528; &lt;code&gt;cd /vagrant&lt;/code&gt; &amp;#x5207;&amp;#x6362;&amp;#x81F3;&amp;#x8BE5; &amp;#x76EE;&amp;#x5F55;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x8BFB;&amp;#x53D6;&amp;#x5BBF;&amp;#x4E3B;&amp;#x673A;&amp;#x5668;&amp;#x62F7;&amp;#x5165;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x3002;&amp;#x5C06;Anaconda&amp;#x5B89;&amp;#x88C5;&amp;#x6587;&amp;#x4EF6;(.sh&amp;#x6587;&amp;#x4EF6;)&amp;#x5BFC;&amp;#x5165;&amp;#x5B89;&amp;#x88C5;&amp;#x5373;&amp;#x53EF;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-3-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.2&lt;/span&gt; &amp;#x914D;&amp;#x7F6E;Ipython&amp;#xFF08;Jupyter&amp;#xFF09;&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;&lt;p&gt;&amp;#x4FEE;&amp;#x6539;Vagrantfile&amp;#xFF0C;&amp;#x4F7F;vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x8F6C;&amp;#x53D1;&amp;#x7AEF;&amp;#x53E3;, &amp;#x53CD;&amp;#x6CE8;&amp;#x91CA;&amp;#x4EE5;&amp;#x4E0B;&amp;#x5185;&amp;#x5BB9;&amp;#x5E76;&amp;#x4FEE;&amp;#x6539;&amp;#x7AEF;&amp;#x53E3;&amp;#xFF1A;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;config.vm.network &lt;span class=&quot;string&quot;&gt;&amp;quot;forwarded_port&amp;quot;&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;guest:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;host:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;vagrant ssh&lt;/code&gt; &amp;#x8FDB;&amp;#x5165;&amp;#x7CFB;&amp;#x7EDF;&amp;#x540E;&amp;#xFF0C;&amp;#x6267;&amp;#x884C;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x5728;&amp;#x5BBF;&amp;#x4E3B;&amp;#x673A;&amp;#x5668;&amp;#x7684;&amp;#x6D4F;&amp;#x89C8;&amp;#x5668;&amp;#x4E2D;&amp;#x8F93;&amp;#x5165; &lt;code&gt;http://localhost&amp;#xFF1A;8888&lt;/code&gt; &amp;#x8FDB;&amp;#x5165;Ipython&amp;#x3002;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &amp;#x5BFC;&amp;#x51FA;Box&amp;#x6587;&amp;#x4EF6;&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;&lt;p&gt;&amp;#x5982;&amp;#x679C;&amp;#x8981;&amp;#x5C06;&amp;#x914D;&amp;#x7F6E;&amp;#x597D;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x5728;&amp;#x53E6;&amp;#x4E00;&amp;#x53F0;&amp;#x673A;&amp;#x5668;&amp;#x4E0A;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x8F93;&amp;#x5165;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant package&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x4F1A;&amp;#x81EA;&amp;#x52A8;&amp;#x6253;&amp;#x5305;&amp;#x5F53;&amp;#x524D;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x751F;&amp;#x6210; &lt;code&gt;package.box&lt;/code&gt;, &amp;#x5728;&amp;#x53E6;&amp;#x4E00;&amp;#x53F0;&amp;#x673A;&amp;#x5668;&amp;#x4E0A;&amp;#x91CD;&amp;#x590D;&amp;#x4EE5;&amp;#x4E0A;&amp;#x6B65;&amp;#x9AA4;&amp;#xFF0C; &amp;#x5728;&amp;#x6DFB;&amp;#x52A0;&amp;#x865A; &amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x65F6;&amp;#x5C06;&amp;#x6253;&amp;#x5305;&amp;#x7684;&amp;#x955C;&amp;#x50CF;&amp;#x5BFC;&amp;#x5165;&amp;#x5373;&amp;#x53EF;&amp;#x3002;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot;color:Silver;float:right&quot;&gt;Render by &lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; style=&quot;color:#87ceeb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</content>
+    <content type="html">
+
+&lt;p&gt;
+&amp;#x5047;&amp;#x671F;&amp;#x56DE;&amp;#x5BB6;&amp;#x53EA;&amp;#x80FD;&amp;#x5E26;&amp;#x7740;Windows&amp;#x7684;&amp;#x7B14;&amp;#x8BB0;&amp;#x672C;&amp;#xFF0C;&amp;#x4F46;Python&amp;#x5728;Windows&amp;#x4E0B;&amp;#x8BF8;&amp;#x591A;&amp;#x4E0D;&amp;#x4FBF;&amp;#x3002;Vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x865A;
+&amp;#x62DF;&amp;#x673A;,&amp;#x5B9E;&amp;#x73B0;&amp;#x5728;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4E0B;&amp;#x5171;&amp;#x4EAB;&amp;#x5F00;&amp;#x53D1;&amp;#x73AF;&amp;#x5883;,&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E0B;&amp;#x6574;&amp;#x4E2A;&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x3002;
+&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x5B89;&amp;#x88C5;Prerequisite&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Virtualbox&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.vagrantup.com/downloads.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Vagrant&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Putty&lt;/a&gt; (Windows&amp;#x7CFB;&amp;#x7EDF;&amp;#xFF0C;&amp;#x5982;&amp;#x65E0;cygwin&amp;#x5FC5;&amp;#x987B;&amp;#x5B89;&amp;#x88C5;)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; &amp;#x914D;&amp;#x7F6E;Vagrant&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+&lt;img src=&quot;/2015/10/16/python-vagrant/Vagrant.png&quot;&gt;
+&amp;#x5B89;&amp;#x88C5;&amp;#x4E0A;&amp;#x8FF0;&amp;#x8F6F;&amp;#x4EF6;&amp;#x540E;(&amp;#x53EF;&amp;#x80FD;&amp;#x9700;&amp;#x8981;&amp;#x91CD;&amp;#x542F;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;), &amp;#x8FDB;&amp;#x5165;&amp;#x547D;&amp;#x4EE4;&amp;#x884C;(Linux/OSX&amp;#x7684;shell&amp;#x6216;&amp;#x662F;Windwos&amp;#x4E0B;&amp;#x7684;
+PowerShell).
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.1&lt;/span&gt; &amp;#x521B;&amp;#x5EFA;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-1&quot;&gt;
+&lt;p&gt;
+&amp;#x9996;&amp;#x5148;&amp;#x786E;&amp;#x5B9A;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;,
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mkdir D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;cd&lt;/span&gt; D:\DataScienceToolbox&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&amp;#x8FDB;&amp;#x5165;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55; &lt;code&gt;D:\DataScienceToolbox&lt;/code&gt;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-2-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;2.2&lt;/span&gt; &amp;#x5B89;&amp;#x88C5;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-2-2&quot;&gt;
+&lt;p&gt;
+&amp;#x7531;&amp;#x4E8E;&amp;#x56FD;&amp;#x5185;&amp;#x7F51;&amp;#x7EDC;&amp;#x7684;&amp;#x539F;&amp;#x56E0;, &amp;#x4E0B;&amp;#x8F7D;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x6587;&amp;#x4EF6;&amp;#x901F;&amp;#x5EA6;&amp;#x5947;&amp;#x6162;, &amp;#x5EFA;&amp;#x8BAE;&amp;#x4F7F;&amp;#x7528;&amp;#x5176;&amp;#x4ED6;&amp;#x65B9;&amp;#x5F0F;&amp;#x4E0B;&amp;#x8F7D;&amp;#x3002;
+&amp;#x5047;&amp;#x8BBE;&amp;#x4E0B;&amp;#x8F7D;&amp;#x540E;&amp;#x6587;&amp;#x4EF6;&amp;#x5728;&amp;#x5F53;&amp;#x524D;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;, &amp;#x6587;&amp;#x4EF6;&amp;#x540D;&amp;#x4E3A; &lt;code&gt;dst.box&lt;/code&gt;
+&amp;#x9996;&amp;#x5148;&amp;#x6267;&amp;#x884C;&amp;#x4EE5;&amp;#x4E0B;&amp;#x547D;&amp;#x4EE4;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant init data-science-toolbox/dst&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;vagrant box add data-science-toolbox/dst .\dst.box&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;code&gt;vagrant box add &amp;lt;&amp;#x73AF;&amp;#x5883;&amp;#x540D;&amp;gt; &amp;lt;&amp;#x6587;&amp;#x4EF6;&amp;#x540D;&amp;gt;&lt;/code&gt; &amp;#x547D;&amp;#x4EE4;&amp;#x5C06; &lt;code&gt;dst.box&lt;/code&gt; &amp;#x5BFC;&amp;#x5165;&amp;#x4E86;
+&lt;code&gt;data-science-toolbox/dst&lt;/code&gt; &amp;#x914D;&amp;#x7F6E;&amp;#x5185;&amp;#x3002;
+&lt;/p&gt;
+
+&lt;p&gt;
+&amp;#x81F3;&amp;#x6B64;Vagrant&amp;#x5C31;&amp;#x7B97;&amp;#x88C5;&amp;#x597D;&amp;#x4E86;&amp;#xFF0C; &amp;#x6267;&amp;#x884C; &lt;code&gt;vagrant up&lt;/code&gt; &amp;#x542F;&amp;#x52A8;&amp;#x865A;&amp;#x62DF;&amp;#x673A;&amp;#xFF0C; &lt;code&gt;vagrant ssh&lt;/code&gt; &amp;#x767B;&amp;#x9646;&amp;#x73AF;&amp;#x5883;
+&amp;#xFF08;&amp;#x5982;&amp;#x51FA;&amp;#x9519;&amp;#x9700;&amp;#x8981;&amp;#x4F7F;&amp;#x7528;putty&amp;#x767B;&amp;#x9646;&amp;#xFF09;&amp;#x3002;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &amp;#x914D;&amp;#x7F6E;Python&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.1&lt;/span&gt; &amp;#x5B89;&amp;#x88C5;Anaconda&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;https://www.continuum.io/downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Anaconda&lt;/a&gt; &amp;#x662F;&amp;#x4E00;&amp;#x4E2A;&amp;#x4F18;&amp;#x79C0;&amp;#x7684;Python&amp;#x53D1;&amp;#x578B;&amp;#x7248;&amp;#xFF0C;&amp;#x5185;&amp;#x7F6E;&amp;#x4E86;&amp;#x5B8C;&amp;#x6574;&amp;#x7684;&amp;#x79D1;&amp;#x5B66;&amp;#x8BA1;&amp;#x7B97;&amp;#x5E93;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x5B89;&amp;#x88C5;&amp;#x3002;
+&amp;#x5B89;&amp;#x88C5;&amp;#x65F6;&amp;#x6CE8;&amp;#x610F;&amp;#xFF0C;Vagrant&amp;#x7684;&amp;#x5171;&amp;#x4EAB;&amp;#x76EE;&amp;#x5F55;&amp;#x9ED8;&amp;#x8BA4;&amp;#x8BBE;&amp;#x7F6E;&amp;#x5728;&amp;#x5B89;&amp;#x88C5;&amp;#x76EE;&amp;#x5F55;&amp;#x5185;&amp;#xFF0C;&amp;#x865A;&amp;#x62DF;&amp;#x673A;&amp;#x73AF;&amp;#x5883;&amp;#x5185;&amp;#x4F7F;&amp;#x7528; &lt;code&gt;cd /vagrant&lt;/code&gt; &amp;#x5207;&amp;#x6362;&amp;#x81F3;&amp;#x8BE5;
+&amp;#x76EE;&amp;#x5F55;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x8BFB;&amp;#x53D6;&amp;#x5BBF;&amp;#x4E3B;&amp;#x673A;&amp;#x5668;&amp;#x62F7;&amp;#x5165;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x3002;&amp;#x5C06;Anaconda&amp;#x5B89;&amp;#x88C5;&amp;#x6587;&amp;#x4EF6;(.sh&amp;#x6587;&amp;#x4EF6;)&amp;#x5BFC;&amp;#x5165;&amp;#x5B89;&amp;#x88C5;&amp;#x5373;&amp;#x53EF;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.2&lt;/span&gt; &amp;#x914D;&amp;#x7F6E;Ipython&amp;#xFF08;Jupyter&amp;#xFF09;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;
+&lt;p&gt;
+&amp;#x4FEE;&amp;#x6539;Vagrantfile&amp;#xFF0C;&amp;#x4F7F;vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x8F6C;&amp;#x53D1;&amp;#x7AEF;&amp;#x53E3;, &amp;#x53CD;&amp;#x6CE8;&amp;#x91CA;&amp;#x4EE5;&amp;#x4E0B;&amp;#x5185;&amp;#x5BB9;&amp;#x5E76;&amp;#x4FEE;&amp;#x6539;&amp;#x7AEF;&amp;#x53E3;&amp;#xFF1A;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight ruby&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;config.vm.network &lt;span class=&quot;string&quot;&gt;&amp;quot;forwarded_port&amp;quot;&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;guest:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;, &lt;span class=&quot;symbol&quot;&gt;host:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;8888&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;code&gt;vagrant ssh&lt;/code&gt; &amp;#x8FDB;&amp;#x5165;&amp;#x7CFB;&amp;#x7EDF;&amp;#x540E;&amp;#xFF0C;&amp;#x6267;&amp;#x884C;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ipython notebook --notebook-dir=/vagrant/notebook --no-browser --ip=0.0.0.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&amp;#x5728;&amp;#x5BBF;&amp;#x4E3B;&amp;#x673A;&amp;#x5668;&amp;#x7684;&amp;#x6D4F;&amp;#x89C8;&amp;#x5668;&amp;#x4E2D;&amp;#x8F93;&amp;#x5165; &lt;code&gt;http://localhost&amp;#xFF1A;8888&lt;/code&gt; &amp;#x8FDB;&amp;#x5165;Ipython&amp;#x3002;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-4&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-4&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;4&lt;/span&gt; &amp;#x5BFC;&amp;#x51FA;Box&amp;#x6587;&amp;#x4EF6;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-4&quot;&gt;
+&lt;p&gt;
+&amp;#x5982;&amp;#x679C;&amp;#x8981;&amp;#x5C06;&amp;#x914D;&amp;#x7F6E;&amp;#x597D;&amp;#x7684;&amp;#x6587;&amp;#x4EF6;&amp;#x5728;&amp;#x53E6;&amp;#x4E00;&amp;#x53F0;&amp;#x673A;&amp;#x5668;&amp;#x4E0A;&amp;#x4F7F;&amp;#x7528;&amp;#xFF0C;&amp;#x8F93;&amp;#x5165;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vagrant package&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&amp;#x4F1A;&amp;#x81EA;&amp;#x52A8;&amp;#x6253;&amp;#x5305;&amp;#x5F53;&amp;#x524D;&amp;#x865A;&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x751F;&amp;#x6210; &lt;code&gt;package.box&lt;/code&gt;, &amp;#x5728;&amp;#x53E6;&amp;#x4E00;&amp;#x53F0;&amp;#x673A;&amp;#x5668;&amp;#x4E0A;&amp;#x91CD;&amp;#x590D;&amp;#x4EE5;&amp;#x4E0A;&amp;#x6B65;&amp;#x9AA4;&amp;#xFF0C; &amp;#x5728;&amp;#x6DFB;&amp;#x52A0;&amp;#x865A;
+&amp;#x62DF;&amp;#x955C;&amp;#x50CF;&amp;#x65F6;&amp;#x5C06;&amp;#x6253;&amp;#x5305;&amp;#x7684;&amp;#x955C;&amp;#x50CF;&amp;#x5BFC;&amp;#x5165;&amp;#x5373;&amp;#x53EF;&amp;#x3002;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;color:Silver;float:right;&quot;&gt;Render by &lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; style=&quot;color:SkyBlue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+</content>
     
     <summary type="html">
     
-      &lt;p&gt;&amp;#x5047;&amp;#x671F;&amp;#x56DE;&amp;#x5BB6;&amp;#x53EA;&amp;#x80FD;&amp;#x5E26;&amp;#x7740;Windows&amp;#x7684;&amp;#x7B14;&amp;#x8BB0;&amp;#x672C;&amp;#xFF0C;&amp;#x4F46;Python&amp;#x5728;Windows&amp;#x4E0B;&amp;#x8BF8;&amp;#x591A;&amp;#x4E0D;&amp;#x4FBF;&amp;#x3002;Vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x865A; &amp;#x62DF;&amp;#x673A;,&amp;#x5B9E;&amp;#x73B0;&amp;#x5728;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4E0B;&amp;#x5171;&amp;#x4EAB;&amp;#x5F00;&amp;#x53D1;&amp;#x73AF;&amp;#x5883;,&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E0B;&amp;#x6574;&amp;#x4E2A;&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x3002;&lt;/p&gt;
+      &lt;p&gt;
+&amp;#x5047;&amp;#x671F;&amp;#x56DE;&amp;#x5BB6;&amp;#x53EA;&amp;#x80FD;&amp;#x5E26;&amp;#x7740;Windows&amp;#x7684;&amp;#x7B14;&amp;#x8BB0;&amp;#x672C;&amp;#xFF0C;&amp;#x4F46;Python&amp;#x5728;Windows&amp;#x4E0B;&amp;#x8BF8;&amp;#x591A;&amp;#x4E0D;&amp;#x4FBF;&amp;#x3002;Vagrant&amp;#x53EF;&amp;#x4EE5;&amp;#x5229;&amp;#x7528;&amp;#x865A;
+&amp;#x62DF;&amp;#x673A;,&amp;#x5B9E;&amp;#x73B0;&amp;#x5728;&amp;#x4E0D;&amp;#x540C;&amp;#x7684;&amp;#x64CD;&amp;#x4F5C;&amp;#x7CFB;&amp;#x7EDF;&amp;#x4E0B;&amp;#x5171;&amp;#x4EAB;&amp;#x5F00;&amp;#x53D1;&amp;#x73AF;&amp;#x5883;,&amp;#x7B80;&amp;#x5355;&amp;#x8BB0;&amp;#x5F55;&amp;#x4E0B;&amp;#x6574;&amp;#x4E2A;&amp;#x914D;&amp;#x7F6E;&amp;#x8FC7;&amp;#x7A0B;&amp;#x3002;
+&lt;/p&gt;
     
     </summary>
     
@@ -46,11 +176,112 @@
     <published>2015-10-14T16:00:00.000Z</published>
     <updated>2016-01-08T09:28:45.609Z</updated>
     
-    <content type="html">&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x80CC;&amp;#x666F;&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://www.graphviz.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Graphviz&lt;/a&gt; &amp;#x662F;&amp;#x4E2A;&amp;#x5236;&amp;#x4F5C;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;, &amp;#x4F7F;&amp;#x7528;&amp;#x8D77;&amp;#x6765;&amp;#x5F88;&amp;#x65B9;&amp;#x4FBF;. &amp;#x7F8E;&amp;#x4E2D;&amp;#x4E0D;&amp;#x8DB3;&amp;#x7684;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x5728;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x4E2D;&amp;#x63D2;&amp;#x516C;&amp;#x5F0F;. &amp;#x501F;&amp;#x52A9;&lt;a href=&quot;http://brighten.bigw.org/projects/ladot/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ladot&lt;/a&gt;, &amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x751F;&amp;#x6210;&amp;#x5E26;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x82F1;&amp;#x6587;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;.&lt;/p&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;p&gt;&amp;#x6211;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x73AF;&amp;#x5883;&amp;#x662F; &lt;code&gt;Ubuntu 14.04 LTS&lt;/code&gt;, &amp;#x5DF2;&amp;#x7ECF;&amp;#x5B89;&amp;#x88C5;&amp;#x597D;&amp;#x4E86; &lt;code&gt;Texlive&lt;/code&gt; &amp;#x548C; &lt;code&gt;dot&lt;/code&gt; . &amp;#x5728; &lt;a href=&quot;http://brighten.bigw.org/projects/ladot/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://brighten.bigw.org/projects/ladot/&lt;/a&gt; &amp;#x4E0B;&amp;#x8F7D;&amp;#x597D;ladot&amp;#x4E4B;&amp;#x540E;&amp;#x6309;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6B65;&amp;#x9AA4;&amp;#x5236;&amp;#x4F5C;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;:&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; Ladot+Graphviz&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;&lt;p&gt;ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.dot&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&amp;#x4E2D;&amp;#x7528; &lt;code&gt;Latex&lt;/code&gt; &amp;#x8BED;&amp;#x6CD5;&amp;#x5199;&amp;#x516C;&amp;#x5F0F;, &amp;#x6BD4;&amp;#x5982;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node [label=$f(x)=x^{2}$(3)]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x6CE8;&amp;#x610F;&amp;#x5728;&amp;#x516C;&amp;#x5F0F;&amp;#x540E;&amp;#x7528;&amp;#x62EC;&amp;#x53F7;&amp;#x6CE8;&amp;#x660E;&amp;#x516C;&amp;#x5F0F;&amp;#x957F;&amp;#x5EA6;,&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x6309;&amp;#x7167;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x5B57;&amp;#x9762;&amp;#x957F;&amp;#x5EA6;&amp;#x53BB;&amp;#x751F;&amp;#x6210;, &amp;#x4E00;&amp;#x822C;&amp;#x6BD4;&amp;#x5B9E;&amp;#x9645;&amp;#x7684;&amp;#x516C;&amp;#x5F0F; &amp;#x5BBD;&amp;#x5F88;&amp;#x591A;.&lt;/p&gt;&lt;p&gt;&amp;#x5B8C;&amp;#x6210;&amp;#x540E;&amp;#x5C06; &lt;code&gt;.dot&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&amp;#x540E;&amp;#x7F00;&amp;#x540D;&amp;#x6539;&amp;#x4E3A; &lt;code&gt;.ladot&lt;/code&gt;, &amp;#x7136;&amp;#x540E;&amp;#x7528;ladot&amp;#x751F;&amp;#x6210;&amp;#x76F8;&amp;#x5E94;&amp;#x7684; &lt;code&gt;.ps&lt;/code&gt; &lt;code&gt;.tex&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;.&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ladot graph.ladot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x4E4B;&amp;#x540E;, &amp;#x5728;&amp;#x8F93;&amp;#x51FA;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x65B0;&amp;#x5EFA; &lt;code&gt;tex&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;, &amp;#x5185;&amp;#x5BB9;&amp;#x5982;&amp;#x4E0B;:&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;\documentclass[english]{article}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[T1]{fontenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[latin1]{inputenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{geometry}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\geometry{verbose,papersize={&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm},lmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in,rmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{graphicx}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatletter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{psfrag}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{babel}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsmath}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsfonts}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amssymb}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatother&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\thispagestyle{empty} %Avoiding page number&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{document}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\input{graph.tex}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\includegraphics{graph.ps}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{document}&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x7531;&amp;#x4E8E;ladot&amp;#x7528;&amp;#x5230;&amp;#x4E86; &lt;i&gt;psfrag&lt;/i&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5305;, &lt;code&gt;Xelatex&lt;/code&gt; &amp;#x5565;&amp;#x7684;&amp;#x90FD;&amp;#x4E0D;&amp;#x652F;&amp;#x6301;, &amp;#x6240;&amp;#x4EE5;&amp;#x4E2D;&amp;#x6587;&amp;#x5C31;&amp;#x4E0D;&amp;#x80FD;&amp;#x7528;&amp;#x4E86;. &amp;#x4F7F; &amp;#x7528;&amp;#x5982;&amp;#x4E0B;&amp;#x547D;&amp;#x4EE4;&amp;#x751F;&amp;#x6210; &lt;code&gt;dvi&lt;/code&gt; :&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;latex dot2dvi.tex&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x518D;&amp;#x751F;&amp;#x6210; &lt;code&gt;ps&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dvips dot2dvi.dvi -o dot2dvi.ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; ps2eps&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;&lt;p&gt;&amp;#x751F;&amp;#x6210;&amp;#x7684; &lt;code&gt;ps&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&amp;#x662F;A4&amp;#x7EB8;&amp;#x5927;&amp;#x5C0F;&amp;#x7684;, &amp;#x63D2;&amp;#x5165;&amp;#x5176;&amp;#x5B83;&amp;#x6587;&amp;#x4EF6;&amp;#x91CC;&amp;#x9762;&amp;#x7A7A;&amp;#x767D;&amp;#x592A;&amp;#x591A;&amp;#x4E86;, &amp;#x4F7F;&amp;#x7528;&amp;#x4EE5;&amp;#x4E0B;&amp;#x547D;&amp;#x4EE4;&amp;#x751F;&amp;#x6210; &lt;code&gt;eps&lt;/code&gt; &amp;#x5E76;&amp;#x53BB;&amp;#x9664;&amp;#x767D;&amp;#x8FB9;.&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ps2eps -B dot2dvi.ps graph.eps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;&amp;#x6211;&amp;#x6253;&amp;#x5305;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&amp;#x811A;&amp;#x672C;( &lt;a href=&quot;https://github.com/allenwoods/ladot2eps&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x4E0B;&amp;#x8F7D;ladot2eps&lt;/a&gt; ), &amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x76F4;&amp;#x63A5;&amp;#x4F7F;&amp;#x7528;.&amp;#x6548;&amp;#x679C;&amp;#x5982;&amp;#x4E0B;:&lt;/p&gt;&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;img src=&quot;/2015/10/15/ladot-intro/lossfunc.png&quot; alt=&quot;&amp;#x635F;&amp;#x5931;&amp;#x51FD;&amp;#x6570;&amp;#x5173;&amp;#x7CFB;&amp;#x56FE;&quot;&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot;color:Silver;float:right&quot;&gt;Render by &lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; style=&quot;color:#87ceeb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</content>
+    <content type="html">
+
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x80CC;&amp;#x666F;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;http://www.graphviz.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Graphviz&lt;/a&gt; &amp;#x662F;&amp;#x4E2A;&amp;#x5236;&amp;#x4F5C;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;, &amp;#x4F7F;&amp;#x7528;&amp;#x8D77;&amp;#x6765;&amp;#x5F88;&amp;#x65B9;&amp;#x4FBF;. &amp;#x7F8E;&amp;#x4E2D;&amp;#x4E0D;&amp;#x8DB3;&amp;#x7684;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x5728;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x4E2D;&amp;#x63D2;&amp;#x516C;&amp;#x5F0F;.
+&amp;#x501F;&amp;#x52A9;&lt;a href=&quot;http://brighten.bigw.org/projects/ladot/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ladot&lt;/a&gt;, &amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x751F;&amp;#x6210;&amp;#x5E26;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x82F1;&amp;#x6587;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;.
+&lt;/p&gt;
+
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;
+&amp;#x6211;&amp;#x7684;&amp;#x5DE5;&amp;#x4F5C;&amp;#x73AF;&amp;#x5883;&amp;#x662F; &lt;code&gt;Ubuntu 14.04 LTS&lt;/code&gt;, &amp;#x5DF2;&amp;#x7ECF;&amp;#x5B89;&amp;#x88C5;&amp;#x597D;&amp;#x4E86; &lt;code&gt;Texlive&lt;/code&gt; &amp;#x548C; &lt;code&gt;dot&lt;/code&gt; . &amp;#x5728;
+&lt;a href=&quot;http://brighten.bigw.org/projects/ladot/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://brighten.bigw.org/projects/ladot/&lt;/a&gt; &amp;#x4E0B;&amp;#x8F7D;&amp;#x597D;ladot&amp;#x4E4B;&amp;#x540E;&amp;#x6309;&amp;#x4EE5;&amp;#x4E0B;&amp;#x6B65;&amp;#x9AA4;&amp;#x5236;&amp;#x4F5C;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;:
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; Ladot+Graphviz&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+ladot&amp;#x652F;&amp;#x6301;&amp;#x76F4;&amp;#x63A5;&amp;#x5728; &lt;code&gt;.dot&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&amp;#x4E2D;&amp;#x7528; &lt;code&gt;Latex&lt;/code&gt; &amp;#x8BED;&amp;#x6CD5;&amp;#x5199;&amp;#x516C;&amp;#x5F0F;, &amp;#x6BD4;&amp;#x5982;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;node [label=$f(x)=x^{2}$(3)]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&amp;#x6CE8;&amp;#x610F;&amp;#x5728;&amp;#x516C;&amp;#x5F0F;&amp;#x540E;&amp;#x7528;&amp;#x62EC;&amp;#x53F7;&amp;#x6CE8;&amp;#x660E;&amp;#x516C;&amp;#x5F0F;&amp;#x957F;&amp;#x5EA6;,&amp;#x5426;&amp;#x5219;&amp;#x4F1A;&amp;#x6309;&amp;#x7167;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x5B57;&amp;#x9762;&amp;#x957F;&amp;#x5EA6;&amp;#x53BB;&amp;#x751F;&amp;#x6210;, &amp;#x4E00;&amp;#x822C;&amp;#x6BD4;&amp;#x5B9E;&amp;#x9645;&amp;#x7684;&amp;#x516C;&amp;#x5F0F;
+&amp;#x5BBD;&amp;#x5F88;&amp;#x591A;.
+&lt;/p&gt;
+
+&lt;p&gt;
+&amp;#x5B8C;&amp;#x6210;&amp;#x540E;&amp;#x5C06; &lt;code&gt;.dot&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&amp;#x540E;&amp;#x7F00;&amp;#x540D;&amp;#x6539;&amp;#x4E3A; &lt;code&gt;.ladot&lt;/code&gt;, &amp;#x7136;&amp;#x540E;&amp;#x7528;ladot&amp;#x751F;&amp;#x6210;&amp;#x76F8;&amp;#x5E94;&amp;#x7684; &lt;code&gt;.ps&lt;/code&gt; &lt;code&gt;.tex&lt;/code&gt;
+&amp;#x6587;&amp;#x4EF6;.
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ladot graph.ladot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x4E4B;&amp;#x540E;, &amp;#x5728;&amp;#x8F93;&amp;#x51FA;&amp;#x76EE;&amp;#x5F55;&amp;#x4E0B;&amp;#x65B0;&amp;#x5EFA; &lt;code&gt;tex&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;, &amp;#x5185;&amp;#x5BB9;&amp;#x5982;&amp;#x4E0B;:
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight c&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;\documentclass[english]{article}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[T1]{fontenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage[latin1]{inputenc}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{geometry}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\geometry{verbose,papersize={&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;cm},lmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in,rmargin=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;in}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{graphicx}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatletter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{psfrag}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{babel}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsmath}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amsfonts}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\usepackage{amssymb}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\makeatother&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;%&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\thispagestyle{empty} %Avoiding page number&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{document}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\begin{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\input{graph.tex}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\includegraphics{graph.ps}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{center}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;\end{document}&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x7531;&amp;#x4E8E;ladot&amp;#x7528;&amp;#x5230;&amp;#x4E86; &lt;i&gt;psfrag&lt;/i&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5305;, &lt;code&gt;Xelatex&lt;/code&gt; &amp;#x5565;&amp;#x7684;&amp;#x90FD;&amp;#x4E0D;&amp;#x652F;&amp;#x6301;, &amp;#x6240;&amp;#x4EE5;&amp;#x4E2D;&amp;#x6587;&amp;#x5C31;&amp;#x4E0D;&amp;#x80FD;&amp;#x7528;&amp;#x4E86;. &amp;#x4F7F;
+&amp;#x7528;&amp;#x5982;&amp;#x4E0B;&amp;#x547D;&amp;#x4EE4;&amp;#x751F;&amp;#x6210; &lt;code&gt;dvi&lt;/code&gt; :
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;latex dot2dvi.tex&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&amp;#x518D;&amp;#x751F;&amp;#x6210; &lt;code&gt;ps&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;dvips dot2dvi.dvi -o dot2dvi.ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; ps2eps&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;p&gt;
+&amp;#x751F;&amp;#x6210;&amp;#x7684; &lt;code&gt;ps&lt;/code&gt; &amp;#x6587;&amp;#x4EF6;&amp;#x662F;A4&amp;#x7EB8;&amp;#x5927;&amp;#x5C0F;&amp;#x7684;, &amp;#x63D2;&amp;#x5165;&amp;#x5176;&amp;#x5B83;&amp;#x6587;&amp;#x4EF6;&amp;#x91CC;&amp;#x9762;&amp;#x7A7A;&amp;#x767D;&amp;#x592A;&amp;#x591A;&amp;#x4E86;, &amp;#x4F7F;&amp;#x7528;&amp;#x4EE5;&amp;#x4E0B;&amp;#x547D;&amp;#x4EE4;&amp;#x751F;&amp;#x6210;
+&lt;code&gt;eps&lt;/code&gt; &amp;#x5E76;&amp;#x53BB;&amp;#x9664;&amp;#x767D;&amp;#x8FB9;.
+&lt;/p&gt;
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ps2eps -B dot2dvi.ps graph.eps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&amp;#x6211;&amp;#x6253;&amp;#x5305;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&amp;#x811A;&amp;#x672C;( &lt;a href=&quot;https://github.com/allenwoods/ladot2eps&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x4E0B;&amp;#x8F7D;ladot2eps&lt;/a&gt; ), &amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x4E0B;&amp;#x8F7D;&amp;#x76F4;&amp;#x63A5;&amp;#x4F7F;&amp;#x7528;.&amp;#x6548;&amp;#x679C;&amp;#x5982;&amp;#x4E0B;:
+&lt;/p&gt;
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;/2015/10/15/ladot-intro/lossfunc.png&quot; alt=&quot;&amp;#x635F;&amp;#x5931;&amp;#x51FD;&amp;#x6570;&amp;#x5173;&amp;#x7CFB;&amp;#x56FE;&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;color:Silver;float:right;&quot;&gt;Render by &lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; style=&quot;color:SkyBlue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+</content>
     
     <summary type="html">
     
-      &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x80CC;&amp;#x666F;&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://www.graphviz.org/&quot;&gt;Graphviz&lt;/a&gt; &amp;#x662F;&amp;#x4E2A;&amp;#x5236;&amp;#x4F5C;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;, &amp;#x4F7F;&amp;#x7528;&amp;#x8D77;&amp;#x6765;&amp;#x5F88;&amp;#x65B9;&amp;#x4FBF;. &amp;#x7F8E;&amp;#x4E2D;&amp;#x4E0D;&amp;#x8DB3;&amp;#x7684;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x5728;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x4E2D;&amp;#x63D2;&amp;#x516C;&amp;#x5F0F;. &amp;#x501F;&amp;#x52A9;&lt;a href=&quot;http://brighten.bigw.org/projects/ladot/&quot;&gt;ladot&lt;/a&gt;, &amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x751F;&amp;#x6210;&amp;#x5E26;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x82F1;&amp;#x6587;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; &amp;#x80CC;&amp;#x666F;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&lt;a href=&quot;http://www.graphviz.org/&quot;&gt;Graphviz&lt;/a&gt; &amp;#x662F;&amp;#x4E2A;&amp;#x5236;&amp;#x4F5C;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x7684;&amp;#x5DE5;&amp;#x5177;, &amp;#x4F7F;&amp;#x7528;&amp;#x8D77;&amp;#x6765;&amp;#x5F88;&amp;#x65B9;&amp;#x4FBF;. &amp;#x7F8E;&amp;#x4E2D;&amp;#x4E0D;&amp;#x8DB3;&amp;#x7684;&amp;#x662F;&amp;#x4E0D;&amp;#x80FD;&amp;#x5728;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;&amp;#x4E2D;&amp;#x63D2;&amp;#x516C;&amp;#x5F0F;.
+&amp;#x501F;&amp;#x52A9;&lt;a href=&quot;http://brighten.bigw.org/projects/ladot/&quot;&gt;ladot&lt;/a&gt;, &amp;#x6211;&amp;#x4EEC;&amp;#x53EF;&amp;#x4EE5;&amp;#x751F;&amp;#x6210;&amp;#x5E26;&amp;#x516C;&amp;#x5F0F;&amp;#x7684;&amp;#x82F1;&amp;#x6587;&amp;#x6D41;&amp;#x7A0B;&amp;#x56FE;.
+&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
     
     </summary>
     
@@ -68,13 +299,142 @@
     <published>2015-10-13T16:00:00.000Z</published>
     <updated>2016-03-16T08:51:35.294Z</updated>
     
-    <content type="html">&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Hexo+Next&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;&lt;p&gt;&amp;#x4E4B;&amp;#x524D;&amp;#x7528; &lt;a href=&quot;https://getnikola.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nikola&lt;/a&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x5929;&amp;#x5FC3;&amp;#x8840;&amp;#x6765;&amp;#x6F6E;&amp;#x60F3;&amp;#x66F4;&amp;#x65B0;&amp;#x4E00;&amp;#x4E0B;,&amp;#x53D1;&amp;#x73B0;&amp;#x7ADF;&amp;#x7136;&amp;#x51FA;Bug&amp;#x4E86;. &amp;#x65E9;&amp;#x5C31;&amp;#x542C;&amp;#x8BF4; &lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt; &amp;#x4E0D;&amp;#x9519;, &amp;#x5C31;&amp;#x7528;&amp;#x5B83;&amp;#x91CD;&amp;#x65B0;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x5427;.&lt;/p&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;p&gt;Hexo&amp;#x7684;&amp;#x6587;&amp;#x6863;&amp;#x786E;&amp;#x5B9E;&amp;#x5F88;&amp;#x8BE6;&amp;#x7EC6;, &amp;#x6309;&amp;#x7167;&amp;#x5B98;&amp;#x65B9;&amp;#x6559;&amp;#x7A0B;&amp;#x914D;&amp;#x7F6E;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;. &amp;#x4E3B;&amp;#x9898;&amp;#x6211;&amp;#x7528;&amp;#x4E86;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Next&lt;/a&gt; , &amp;#x8FD9;&amp;#x4E2A;&amp;#x4E3B;&amp;#x9898;&amp;#x7684;&amp;#x6587;&amp;#x6863; &amp;#x4E5F;&amp;#x76F8;&amp;#x5F53;&amp;#x8D5E;, &amp;#x6309;&amp;#x7167;&amp;#x4F7F;&amp;#x7528;&amp;#x6587;&amp;#x6863;&amp;#x8BBE;&amp;#x7F6E;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5F00;&amp;#x542F;&amp;#x591A;&amp;#x8BF4;&amp;#x8BC4;&amp;#x8BBA;&amp;#x7B49;&amp;#x529F;&amp;#x80FD;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; Org-mode&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;&lt;p&gt;CodeFalling&amp;#x540C;&amp;#x5B66;&amp;#x505A;&amp;#x4E86;org&amp;#x7684;&amp;#x6E32;&amp;#x67D3;&amp;#x5668;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x7528;org&amp;#x5199;&amp;#x535A;&amp;#x5BA2;&amp;#x5566;&amp;#xFF01;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CodeFalling/hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;#x8BE6;&amp;#x7EC6;&amp;#x8BF4;&amp;#x660E;&amp;#x53C2;&amp;#x89C1;&amp;#x4ED6;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&lt;a href=&quot;http://codefalling.com/2015/11/15/new-version-of-hexo-renderer-org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5B8C;&amp;#x6574;&amp;#x7279;&amp;#x6027;&amp;#x7684; hexo-renderer-org&lt;/a&gt;. &amp;#x4F7F;&amp;#x7528;&amp;#x65F6;&amp;#x6CE8;&amp;#x610F;&amp;#x5347;&amp;#x7EA7;node&amp;#xFF0C;&amp;#x7248;&amp;#x672C;&amp;#x592A;&amp;#x4F4E;&amp;#x4F1A;&amp;#x51FA;&amp;#x73B0;&amp;#x5404;&amp;#x79CD;&amp;#x95EE;&amp;#x9898;&amp;#x2026;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &amp;#x663E;&amp;#x793A;&amp;#x6D4B;&amp;#x8BD5;&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-3-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.1&lt;/span&gt; &amp;#x5B57;&amp;#x4F53;&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;&lt;/div&gt;&lt;ol class=&quot;org-ol&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-1-1&quot; name=&quot;sec-3-1-1&quot;&gt;&lt;/a&gt;&amp;#x6B63;&amp;#x5E38;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-1&quot;&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;Regular&lt;/li&gt;&lt;li&gt;&amp;#x6B63;&amp;#x5E38;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;sec-3-1-2&quot; name=&quot;sec-3-1-2&quot;&gt;&lt;/a&gt;&amp;#x659C;&amp;#x4F53;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-2&quot;&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;i&gt;Italic&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;i&gt;&amp;#x659C;&amp;#x4F53;&lt;/i&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;sec-3-1-3&quot; name=&quot;sec-3-1-3&quot;&gt;&lt;/a&gt;&amp;#x7C97;&amp;#x4F53;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-3&quot;&gt;&lt;ul class=&quot;org-ul&quot;&gt;&lt;li&gt;&lt;b&gt;Bold&lt;/b&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;&amp;#x7C97;&amp;#x4F53;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-3-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.2&lt;/span&gt; &amp;#x516C;&amp;#x5F0F;&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;&lt;/div&gt;&lt;ol class=&quot;org-ol&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-2-1&quot; name=&quot;sec-3-2-1&quot;&gt;&lt;/a&gt;&amp;#x884C;&amp;#x5185;&amp;#x516C;&amp;#x5F0F;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-2-1&quot;&gt;&lt;p&gt;&amp;#x6B27;&amp;#x62C9;&amp;#x516C;&amp;#x5F0F; : \(e^{i \pi}+1=0\)&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;sec-3-2-2&quot; name=&quot;sec-3-2-2&quot;&gt;&lt;/a&gt;&amp;#x72EC;&amp;#x7ACB;&amp;#x516C;&amp;#x5F0F;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-2-2&quot;&gt;&lt;p&gt;\[ e^{i \pi}+1=0 \]&lt;/p&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-3&quot; class=&quot;outline-3&quot;&gt;&lt;h3 id=&quot;sec-3-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.3&lt;/span&gt; &amp;#x4EE3;&amp;#x7801;&lt;/h3&gt;&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-3&quot;&gt;&lt;/div&gt;&lt;ol class=&quot;org-ol&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-3-1&quot; name=&quot;sec-3-3-1&quot;&gt;&lt;/a&gt;&amp;#x751F;&amp;#x6210;&amp;#x56FE;&amp;#x7247;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-3-1&quot;&gt;&lt;p&gt;&amp;#x6307;&amp;#x5B9A;&amp;#x8F93;&amp;#x51FA;&amp;#x4E3A;&amp;#x6587;&amp;#x4EF6;: &lt;code&gt;#+BEGIN_SRC python :results file :exports both&lt;/code&gt;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib, numpy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;matplotlib.use(&lt;span class=&quot;string&quot;&gt;&amp;apos;Agg&amp;apos;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; plt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;&amp;apos;try_hexo/python-matplot-fig.png&amp;apos;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig=plt.figure(figsize=(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x=numpy.linspace(-&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.plot(numpy.sin(x)/x)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig.tight_layout()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.savefig(filename)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; filename &lt;span class=&quot;comment&quot;&gt;# return filename to org-mode&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;div class=&quot;figure&quot;&gt;&lt;p&gt;&lt;img src=&quot;/2015/10/14/try_hexo/python-matplot-fig.png&quot; alt=&quot;&amp;#x51FD;&amp;#x6570;&amp;#x8F93;&amp;#x51FA;&amp;#x7684;&amp;#x56FE;&amp;#x50CF;&quot;&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a id=&quot;sec-3-3-2&quot; name=&quot;sec-3-3-2&quot;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x8F93;&amp;#x51FA;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-3-2&quot;&gt;&lt;p&gt;&amp;#x6307;&amp;#x5B9A;&amp;#x8F93;&amp;#x51FA;: &lt;code&gt;#+BEGIN_SRC python :results output :exports both&lt;/code&gt;&lt;/p&gt;&lt;div class=&quot;org-src-container&quot;&gt;&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;print(&lt;span class=&quot;string&quot;&gt;&amp;quot;Hello, Blog&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/div&gt;&lt;pre class=&quot;example&quot;&gt;
+    <content type="html">
+
+
+&lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Hexo+Next&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&amp;#x4E4B;&amp;#x524D;&amp;#x7528; &lt;a href=&quot;https://getnikola.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Nikola&lt;/a&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x5929;&amp;#x5FC3;&amp;#x8840;&amp;#x6765;&amp;#x6F6E;&amp;#x60F3;&amp;#x66F4;&amp;#x65B0;&amp;#x4E00;&amp;#x4E0B;,&amp;#x53D1;&amp;#x73B0;&amp;#x7ADF;&amp;#x7136;&amp;#x51FA;Bug&amp;#x4E86;. &amp;#x65E9;&amp;#x5C31;&amp;#x542C;&amp;#x8BF4; &lt;a href=&quot;https://hexo.io/zh-cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt; &amp;#x4E0D;&amp;#x9519;, &amp;#x5C31;&amp;#x7528;&amp;#x5B83;&amp;#x91CD;&amp;#x65B0;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x5427;.
+&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;p&gt;
+Hexo&amp;#x7684;&amp;#x6587;&amp;#x6863;&amp;#x786E;&amp;#x5B9E;&amp;#x5F88;&amp;#x8BE6;&amp;#x7EC6;, &amp;#x6309;&amp;#x7167;&amp;#x5B98;&amp;#x65B9;&amp;#x6559;&amp;#x7A0B;&amp;#x914D;&amp;#x7F6E;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;. &amp;#x4E3B;&amp;#x9898;&amp;#x6211;&amp;#x7528;&amp;#x4E86;&lt;a href=&quot;https://github.com/iissnan/hexo-theme-next&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Next&lt;/a&gt; , &amp;#x8FD9;&amp;#x4E2A;&amp;#x4E3B;&amp;#x9898;&amp;#x7684;&amp;#x6587;&amp;#x6863;
+&amp;#x4E5F;&amp;#x76F8;&amp;#x5F53;&amp;#x8D5E;, &amp;#x6309;&amp;#x7167;&amp;#x4F7F;&amp;#x7528;&amp;#x6587;&amp;#x6863;&amp;#x8BBE;&amp;#x7F6E;&amp;#x5C31;&amp;#x53EF;&amp;#x4EE5;&amp;#x5F00;&amp;#x542F;&amp;#x591A;&amp;#x8BF4;&amp;#x8BC4;&amp;#x8BBA;&amp;#x7B49;&amp;#x529F;&amp;#x80FD;.
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-2&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-2&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;2&lt;/span&gt; Org-mode&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-2&quot;&gt;
+&lt;p&gt;
+CodeFalling&amp;#x540C;&amp;#x5B66;&amp;#x505A;&amp;#x4E86;org&amp;#x7684;&amp;#x6E32;&amp;#x67D3;&amp;#x5668;&amp;#xFF0C;&amp;#x53EF;&amp;#x4EE5;&amp;#x76F4;&amp;#x63A5;&amp;#x7528;org&amp;#x5199;&amp;#x535A;&amp;#x5BA2;&amp;#x5566;&amp;#xFF01;
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;CodeFalling/hexo-renderer-org&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+&amp;#x8BE6;&amp;#x7EC6;&amp;#x8BF4;&amp;#x660E;&amp;#x53C2;&amp;#x89C1;&amp;#x4ED6;&amp;#x7684;&amp;#x535A;&amp;#x5BA2;&lt;a href=&quot;http://codefalling.com/2015/11/15/new-version-of-hexo-renderer-org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;&amp;#x5B8C;&amp;#x6574;&amp;#x7279;&amp;#x6027;&amp;#x7684; hexo-renderer-org&lt;/a&gt;. &amp;#x4F7F;&amp;#x7528;&amp;#x65F6;&amp;#x6CE8;&amp;#x610F;&amp;#x5347;&amp;#x7EA7;node&amp;#xFF0C;&amp;#x7248;&amp;#x672C;&amp;#x592A;&amp;#x4F4E;&amp;#x4F1A;&amp;#x51FA;&amp;#x73B0;&amp;#x5404;&amp;#x79CD;&amp;#x95EE;&amp;#x9898;&amp;#x2026;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-3&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;3&lt;/span&gt; &amp;#x663E;&amp;#x793A;&amp;#x6D4B;&amp;#x8BD5;&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-3&quot;&gt;
+&lt;/div&gt;&lt;div id=&quot;outline-container-sec-3-1&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-1&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.1&lt;/span&gt; &amp;#x5B57;&amp;#x4F53;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-1&quot;&gt;
+&lt;/div&gt;&lt;ol class=&quot;org-ol&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-1-1&quot; name=&quot;sec-3-1-1&quot;&gt;&lt;/a&gt;&amp;#x6B63;&amp;#x5E38;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-1&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;Regular
+&lt;/li&gt;
+&lt;li&gt;&amp;#x6B63;&amp;#x5E38;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;sec-3-1-2&quot; name=&quot;sec-3-1-2&quot;&gt;&lt;/a&gt;&amp;#x659C;&amp;#x4F53;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-2&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;i&gt;Italic&lt;/i&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;i&gt;&amp;#x659C;&amp;#x4F53;&lt;/i&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;sec-3-1-3&quot; name=&quot;sec-3-1-3&quot;&gt;&lt;/a&gt;&amp;#x7C97;&amp;#x4F53;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-1-3&quot;&gt;
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;b&gt;Bold&lt;/b&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;&amp;#x7C97;&amp;#x4F53;&lt;/b&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-2&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-2&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.2&lt;/span&gt; &amp;#x516C;&amp;#x5F0F;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-2&quot;&gt;
+&lt;/div&gt;&lt;ol class=&quot;org-ol&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-2-1&quot; name=&quot;sec-3-2-1&quot;&gt;&lt;/a&gt;&amp;#x884C;&amp;#x5185;&amp;#x516C;&amp;#x5F0F;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-2-1&quot;&gt;
+&lt;p&gt;
+&amp;#x6B27;&amp;#x62C9;&amp;#x516C;&amp;#x5F0F; : \(e^{i \pi}+1=0\)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a id=&quot;sec-3-2-2&quot; name=&quot;sec-3-2-2&quot;&gt;&lt;/a&gt;&amp;#x72EC;&amp;#x7ACB;&amp;#x516C;&amp;#x5F0F;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-2-2&quot;&gt;
+&lt;p&gt;
+\[
+e^{i \pi}+1=0
+\]
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&quot;outline-container-sec-3-3&quot; class=&quot;outline-3&quot;&gt;
+&lt;h3 id=&quot;sec-3-3&quot;&gt;&lt;span class=&quot;section-number-3&quot;&gt;3.3&lt;/span&gt; &amp;#x4EE3;&amp;#x7801;&lt;/h3&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-3-3&quot;&gt;
+&lt;/div&gt;&lt;ol class=&quot;org-ol&quot;&gt;&lt;li&gt;&lt;a id=&quot;sec-3-3-1&quot; name=&quot;sec-3-3-1&quot;&gt;&lt;/a&gt;&amp;#x751F;&amp;#x6210;&amp;#x56FE;&amp;#x7247;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-3-1&quot;&gt;
+&lt;p&gt;
+&amp;#x6307;&amp;#x5B9A;&amp;#x8F93;&amp;#x51FA;&amp;#x4E3A;&amp;#x6587;&amp;#x4EF6;: &lt;code&gt;#+BEGIN_SRC python :results file :exports both&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib, numpy&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;matplotlib.use(&lt;span class=&quot;string&quot;&gt;&amp;apos;Agg&amp;apos;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; plt&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;&amp;apos;try_hexo/python-matplot-fig.png&amp;apos;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig=plt.figure(figsize=(&lt;span class=&quot;number&quot;&gt;4&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;x=numpy.linspace(-&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.plot(numpy.sin(x)/x)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;fig.tight_layout()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.savefig(filename)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; filename &lt;span class=&quot;comment&quot;&gt;# return filename to org-mode&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;figure&quot;&gt;
+&lt;p&gt;&lt;img src=&quot;/2015/10/14/try_hexo/python-matplot-fig.png&quot; alt=&quot;&amp;#x51FD;&amp;#x6570;&amp;#x8F93;&amp;#x51FA;&amp;#x7684;&amp;#x56FE;&amp;#x50CF;&quot;&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;&lt;a id=&quot;sec-3-3-2&quot; name=&quot;sec-3-3-2&quot;&gt;&lt;/a&gt;&amp;#x51FD;&amp;#x6570;&amp;#x8F93;&amp;#x51FA;&lt;br&gt;&lt;div class=&quot;outline-text-4&quot; id=&quot;text-3-3-2&quot;&gt;
+&lt;p&gt;
+&amp;#x6307;&amp;#x5B9A;&amp;#x8F93;&amp;#x51FA;: &lt;code&gt;#+BEGIN_SRC python :results output :exports both&lt;/code&gt;
+&lt;/p&gt;
+
+
+&lt;div class=&quot;org-src-container&quot;&gt;
+
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;print(&lt;span class=&quot;string&quot;&gt;&amp;quot;Hello, Blog&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;pre class=&quot;example&quot;&gt;
 Hello, Blog
-&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot;color:Silver;float:right&quot;&gt;Render by &lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; style=&quot;color:#87ceeb&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</content>
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/li&gt;&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p style=&quot;color:Silver;float:right;&quot;&gt;Render by &lt;a href=&quot;https://github.com/CodeFalling/hexo-renderer-org&quot; style=&quot;color:SkyBlue&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-org&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+</content>
     
     <summary type="html">
     
-      &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Hexo+Next&lt;/h2&gt;&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;&lt;p&gt;&amp;#x4E4B;&amp;#x524D;&amp;#x7528; &lt;a href=&quot;https://getnikola.com/&quot;&gt;Nikola&lt;/a&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x5929;&amp;#x5FC3;&amp;#x8840;&amp;#x6765;&amp;#x6F6E;&amp;#x60F3;&amp;#x66F4;&amp;#x65B0;&amp;#x4E00;&amp;#x4E0B;,&amp;#x53D1;&amp;#x73B0;&amp;#x7ADF;&amp;#x7136;&amp;#x51FA;Bug&amp;#x4E86;. &amp;#x65E9;&amp;#x5C31;&amp;#x542C;&amp;#x8BF4; &lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt; &amp;#x4E0D;&amp;#x9519;, &amp;#x5C31;&amp;#x7528;&amp;#x5B83;&amp;#x91CD;&amp;#x65B0;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x5427;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div id=&quot;outline-container-sec-1&quot; class=&quot;outline-2&quot;&gt;
+&lt;h2 id=&quot;sec-1&quot;&gt;&lt;span class=&quot;section-number-2&quot;&gt;1&lt;/span&gt; Hexo+Next&lt;/h2&gt;
+&lt;div class=&quot;outline-text-2&quot; id=&quot;text-1&quot;&gt;
+&lt;p&gt;
+&amp;#x4E4B;&amp;#x524D;&amp;#x7528; &lt;a href=&quot;https://getnikola.com/&quot;&gt;Nikola&lt;/a&gt; &amp;#x8FD9;&amp;#x4E2A;&amp;#x5F15;&amp;#x64CE;&amp;#x505A;&amp;#x4E86;&amp;#x4E2A;&amp;#x535A;&amp;#x5BA2;, &amp;#x4E4B;&amp;#x540E;&amp;#x5C31;&amp;#x597D;&amp;#x4E45;&amp;#x6CA1;&amp;#x66F4;&amp;#x65B0;&amp;#x2026;&amp;#x4ECA;&amp;#x5929;&amp;#x5FC3;&amp;#x8840;&amp;#x6765;&amp;#x6F6E;&amp;#x60F3;&amp;#x66F4;&amp;#x65B0;&amp;#x4E00;&amp;#x4E0B;,&amp;#x53D1;&amp;#x73B0;&amp;#x7ADF;&amp;#x7136;&amp;#x51FA;Bug&amp;#x4E86;. &amp;#x65E9;&amp;#x5C31;&amp;#x542C;&amp;#x8BF4; &lt;a href=&quot;https://hexo.io/zh-cn/&quot;&gt;Hexo&lt;/a&gt; &amp;#x4E0D;&amp;#x9519;, &amp;#x5C31;&amp;#x7528;&amp;#x5B83;&amp;#x91CD;&amp;#x65B0;&amp;#x505A;&amp;#x4E00;&amp;#x4E2A;&amp;#x5427;.
+&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;
     
     </summary>
     
